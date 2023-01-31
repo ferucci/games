@@ -93,32 +93,118 @@
         </div>
     </header>
 
-    <main class="main"></main>
+    <main class="main faq">
+        <section class="faq header-title">
+            <div class="faq__wrapp header-item__inner">
+                <div class="faq__item">
+                    <div class="container">
+                        <div class="faq__box">
+
+                            <h2 class="faq__title header-item__title">
+                                <span class="faq__title-att header-item__att">
+                                    в
+                                </span>
+                                <span class="faq__title-text header-item__text">прос - ответ</span>
+                            </h2>
+
+                            <p class="faq__subtitle header-item__subtitle">
+                                Ты можешь поискать интересующие тебя вопросы или задать новый.
+                            </p>
+
+                            <a class="faq__button accent-btn" href="#">
+                                Задать вопрос
+                            </a>
+                            <span class="faq__text">
+                                Ответим в течении 12 часов
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="content">
+            <div class="container">
+                <div class="content__inner faq-content">
+                    <div class="faq-content__top">
+                        <h3 class="faq-content__title top__title">
+                            Ответы на ваши вопросы
+                        </h3>
+                        <ul class="faq-content__tabs">
+                            <li class="faq-content__tab faq-content__tab-active" data-FAQ="work">
+                                <button class="faq-content__tab-link" type="button">
+                                    О работе
+                                </button>
+                            </li>
+                            <li class="faq-content__tab" data-FAQ="manager">
+                                <button class="faq-content__tab-link" type="button">
+                                    Менеджер
+                                </button>
+                            </li>
+                            <li class="faq-content__tab" data-FAQ="goods">
+                                <button class="faq-content__tab-link" type="button">
+                                    Товары
+                                </button>
+                            </li>
+                            <li class="faq-content__tab" data-FAQ="scammers">
+                                <button class="faq-content__tab-link" type="button">
+                                    Мошенники
+                                </button>
+                            </li>
+                            <li class="faq-content__tab" data-FAQ="ideas">
+                                <button class="faq-content__tab-link" type="button">
+                                    Идеи
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="faq-content__triggers work faq-triggers">
+                        <div class="faq-triggers__items">
+                            <div class="faq-triggers__item">
+                                <div class="faq-triggers__title">
+                                    <span class="faq-triggers__title-text">
+                                        Когда я получу свой заказ?
+                                    </span>
+                                    <span class="faq-triggers__btn"></sp>
+                                </div>
+                                <p class="faq-triggers__text">
+                                    1. Покупка на текущий аккаунт steam по средством добавления аккаунта магазина в
+                                    друзья и получение игры подарком<br>
+                                    2. Добавление аккаунта купленного у магазина в семейным доступ (Аренда игры через
+                                    семейный доступ )
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapp">
                 <nav class="nav">
-
                     <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link" href="./catalog.html">
+                        <li class="nav__item" id="catalog">
+                            <a class="nav__link" href="#">
                                 Каталог
                             </a>
                         </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="./reviews.html">
+                        <li class="nav__item" id="review">
+                            <a class="nav__link" href="#">
                                 Отзывы
                             </a>
                         </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="./quest-ans.html">
+                        <li class="nav__item" id="ans-ques">
+                            <a class="nav__link" href="#">
                                 Вопрос-ответ
                             </a>
                         </li>
                     </ul>
-
                 </nav>
+
                 <img class="footer__logo" src="./images/logo-footer.svg" alt="logo">
 
                 <article class="footer__social social">

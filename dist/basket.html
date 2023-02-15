@@ -180,11 +180,11 @@
                     </div>
 
                     <div class="profile__items profile-content">
-                        <div class="profile-content__top">
+                        <div class="profile-content__top" data-tabs="profile-tab">
                             <ul class="content__tabs profile-content__tabs">
 
-                                <li class="content__tab profile-content__tab--active" data-type="basket-content">
-                                    <button class="content__tab-link" type="button">
+                                <li class="content__tab" data-type="basket-content">
+                                    <button class="content__tab-link content__tab-link--active" type="button">
                                         Ваша корзина
                                     </button>
                                 </li>
@@ -203,141 +203,143 @@
                         </div>
 
                         <div class="profile-content-box">
-                            <div class="basket-content content__box content__box--active">
-                                <div class="basket-content__games">
-                                    <div class="basket-content__game">
-                                        <div class="basket-content__game-info">
-                                            <img class="basket-content__game-image"
-                                                src="./images/games/small/game-1.png" alt="game image prev">
-                                            <div class="basket-content__game-text">
-                                                <span class="basket-content__game-name">
-                                                    Death Stranding
-                                                </span>
-                                                <span class="basket-content__game-sum">
-                                                    359,599 ₽
-                                                </span>
+                            <div class="basket-content content__box">
+                                <div class="basket-content__inner">
+                                    <div class="basket-content__games">
+                                        <div class="basket-content__game">
+                                            <div class="basket-content__game-info">
+                                                <img class="basket-content__game-image"
+                                                    src="./images/games/small/game-1.png" alt="game image prev">
+                                                <div class="basket-content__game-text">
+                                                    <span class="basket-content__game-name">
+                                                        Death Stranding
+                                                    </span>
+                                                    <span class="basket-content__game-sum">
+                                                        359,599 ₽
+                                                    </span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="basket-content__game-select">
-                                            <span class="basket-content__game-del">
-                                                &#10006;
-                                            </span>
-                                            <div class="basket-content__select-app">
-                                                <div class="basket-content__select-wrapp">
+                                            <div class="basket-content__game-select">
+                                                <span class="basket-content__game-del">
+                                                    &#10006;
+                                                </span>
+                                                <div class="basket-content__select-app">
+                                                    <div class="basket-content__select-wrapp">
 
-                                                    <div id="select-1">
+                                                        <div id="select-1">
+
+                                                        </div>
 
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="basket-content__game">
+                                            <div class="basket-content__game-info">
+                                                <img class="basket-content__game-image"
+                                                    src="./images/games/small/game-2.png" alt="game image prev">
+                                                <div class="basket-content__game-text">
+                                                    <span class="basket-content__game-name">
+                                                        Death Stranding
+                                                    </span>
+                                                    <span class="basket-content__game-sum">
+                                                        359,599 ₽
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="basket-content__game-select">
+                                                <span class="basket-content__game-del">
+                                                    &#10006;
+                                                </span>
+                                                <div class="basket-content__select-app">
+                                                    <div class="basket-content__select-wrapp">
 
+                                                        <div id="select-2">
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="basket-content__game">
+                                            <div class="basket-content__game-info">
+                                                <img class="basket-content__game-image"
+                                                    src="./images/games/small/game-3.png" alt="game image prev">
+                                                <div class="basket-content__game-text">
+                                                    <span class="basket-content__game-name">
+                                                        Death Stranding
+                                                    </span>
+                                                    <span class="basket-content__game-sum">
+                                                        359,599 ₽
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="basket-content__game-select">
+                                                <span class="basket-content__game-del">
+                                                    &#10006;
+                                                </span>
+                                                <div class="basket-content__select-app">
+                                                    <div class="basket-content__select-wrapp">
+
+                                                        <div id="select-3">
+
+                                                        </div>
+
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="basket-content__game">
-                                        <div class="basket-content__game-info">
-                                            <img class="basket-content__game-image"
-                                                src="./images/games/small/game-2.png" alt="game image prev">
-                                            <div class="basket-content__game-text">
-                                                <span class="basket-content__game-name">
-                                                    Death Stranding
-                                                </span>
-                                                <span class="basket-content__game-sum">
-                                                    359,599 ₽
-                                                </span>
+                                    <form class="basket-content__form form-basket" id="form-basket">
+                                        <div class="form-basket__wrapp">
+                                            <div class="form-basket__text">
+                                                <p class="form-basket__total-sum">
+                                                    Итого: <span>619,18 ₽</span>
+                                                </p>
+                                                <p class="form-basket__total-items">
+                                                    Товаров: <span>4</span>
+                                                </p>
+                                                <p class="form-basket__discount">
+                                                    Скидка: <span>122 ₽</span>
+                                                </p>
                                             </div>
-                                        </div>
-                                        <div class="basket-content__game-select">
-                                            <span class="basket-content__game-del">
-                                                &#10006;
-                                            </span>
-                                            <div class="basket-content__select-app">
-                                                <div class="basket-content__select-wrapp">
-
-                                                    <div id="select-2">
-
-                                                    </div>
-
+                                            <div class="form-basket__inner">
+                                                <h4 class="form-basket__inner-title">
+                                                    Форма оплаты:
+                                                </h4>
+                                                <div class="form-basket__payment-choice">
+                                                    <label class="form-basket__label">
+                                                        <input class="form-basket__input" type="radio"
+                                                            name="payment-choice">
+                                                        Юкасса
+                                                    </label>
+                                                    <label class="form-basket__label">
+                                                        <input class="form-basket__input" type="radio"
+                                                            name="payment-choice">
+                                                        Альфа Банк
+                                                    </label>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="basket-content__game">
-                                        <div class="basket-content__game-info">
-                                            <img class="basket-content__game-image"
-                                                src="./images/games/small/game-3.png" alt="game image prev">
-                                            <div class="basket-content__game-text">
-                                                <span class="basket-content__game-name">
-                                                    Death Stranding
-                                                </span>
-                                                <span class="basket-content__game-sum">
-                                                    359,599 ₽
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="basket-content__game-select">
-                                            <span class="basket-content__game-del">
-                                                &#10006;
-                                            </span>
-                                            <div class="basket-content__select-app">
-                                                <div class="basket-content__select-wrapp">
-
-                                                    <div id="select-3">
-
-                                                    </div>
-
+                                                <div class="form-basket__promocode">
+                                                    <input class="form-basket__promocode-input" type="text"
+                                                        placeholder="Введите промокод">
+                                                    <button class="form-basket__promocode-btn">Проверить</button>
                                                 </div>
+                                                <button class="accent-btn form-basket__submit" type="submit">
+                                                    Создать заявку
+                                                </button>
                                             </div>
                                         </div>
+                                    </form>
+                                    <div class="basket-content__action">
+                                        <button class="basket-content__action-button accent-btn" type="submit">
+                                            Создать заявку
+                                        </button>
                                     </div>
-                                </div>
-                                <form class="basket-content__form form-basket" id="form-basket">
-                                    <div class="form-basket__wrapp">
-                                        <div class="form-basket__text">
-                                            <p class="form-basket__total-sum">
-                                                Итого: <span>619,18 ₽</span>
-                                            </p>
-                                            <p class="form-basket__total-items">
-                                                Товаров: <span>4</span>
-                                            </p>
-                                            <p class="form-basket__discount">
-                                                Скидка: <span>122 ₽</span>
-                                            </p>
-                                        </div>
-                                        <div class="form-basket__inner">
-                                            <h4 class="form-basket__inner-title">
-                                                Форма оплаты:
-                                            </h4>
-                                            <div class="form-basket__payment-choice">
-                                                <label class="form-basket__label">
-                                                    <input class="form-basket__input" type="radio"
-                                                        name="payment-choice">
-                                                    Юкасса
-                                                </label>
-                                                <label class="form-basket__label">
-                                                    <input class="form-basket__input" type="radio"
-                                                        name="payment-choice">
-                                                    Альфа Банк
-                                                </label>
-                                            </div>
-                                            <div class="form-basket__promocode">
-                                                <input class="form-basket__promocode-input" type="text"
-                                                    placeholder="Введите промокод">
-                                                <button class="form-basket__promocode-btn">Проверить</button>
-                                            </div>
-                                            <button class="accent-btn form-basket__submit" type="submit">
-                                                Создать заявку
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="basket-content__action">
-                                    <button class="basket-content__action-button accent-btn" type="submit">
-                                        Создать заявку
-                                    </button>
                                 </div>
                             </div>
 
-                            <div class="status-content content__box dn">
+                            <div class="status-content content__box">
 
                                 <div class="status-content__top">
                                     <p>
@@ -568,7 +570,7 @@
 
                             </div>
 
-                            <div class="story-content content__box dn">
+                            <div class="story-content content__box">
 
                                 <div class="story-content__top">
                                     <div class="story-content__top-box">

@@ -93,219 +93,332 @@
         </div>
     </header>
 
-    <main class="faq">
-        <section class="header-item">
-            <div class="faq__wrapp header-item__inner">
-                <div class="faq__item">
-                    <div class="container">
-                        <div class="faq__box">
+    <main class="main">
 
-                            <h2 class="faq__title header-item__title">
-                                <span class="faq__title-att header-item__att">
-                                    в
-                                </span>
-                                <span class="faq__title-text header-item__text">прос - ответ</span>
-                            </h2>
+        <!-- Заказ игры с подобными товарами -->
 
-                            <p class="faq__subtitle header-item__subtitle">
-                                Ты можешь поискать интересующие тебя вопросы или задать новый.
-                            </p>
-
-                            <a class="faq__button accent-btn" href="#">
-                                Задать вопрос
-                            </a>
-                            <span class="faq__text">
-                                Ответим в течении 12 часов
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <section class="content">
+        <div class="game-purchase popup">
             <div class="container">
-                <div class="content__inner faq-content">
-                    <div class="faq-content__top" data-tabs="faq-tab">
-                        <h3 class="faq-content__title top__title">
-                            Ответы на ваши вопросы
-                        </h3>
-                        <ul class="content__tabs">
-                            <li class="content__tab" data-FAQ="work">
-                                <button class="content__tab-link content__tab-link--active" type="button">
-                                    О работе
-                                </button>
-                            </li>
-                            <li class="content__tab" data-FAQ="manager">
-                                <button class="content__tab-link" type="button">
-                                    Менеджер
-                                </button>
-                            </li>
-                            <li class="content__tab" data-FAQ="goods">
-                                <button class="content__tab-link" type="button">
-                                    Товары
-                                </button>
-                            </li>
-                            <li class="content__tab" data-FAQ="scammers">
-                                <button class="content__tab-link" type="button">
-                                    Мошенники
-                                </button>
-                            </li>
-                            <li class="content__tab" data-FAQ="ideas">
-                                <button class="content__tab-link" type="button">
-                                    Идеи
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="faq-content-box">
-                        <div class="faq-content__triggers work faq-triggers content__box">
-                            <div class="faq-triggers__items">
-                                <div class="faq-triggers__item">
-                                    <div class="faq-triggers__title">
-                                        <span class="faq-triggers__title-text">
-                                            Когда я получу свой заказ?
-                                        </span>
-                                        <div class="faq-triggers__btn faq-triggers__btn--active">
-                                            <span class="faq-triggers__btn-plus"></span>
-                                            <span class="faq-triggers__btn-minus"></span>
-                                        </div>
-                                    </div>
-                                    <p class="faq-triggers__text faq-triggers__text--active">
-                                        1. Покупка на текущий аккаунт steam по средством добавления аккаунта магазина в
-                                        друзья и получение игры подарком<br>
-                                        2. Добавление аккаунта купленного у магазина в семейным доступ (Аренда игры
-                                        через
-                                        семейный доступ )
-                                    </p>
+                <div class="game-purchase__wrapp popup__wrapp">
+                    <div class="selected-game">
+                        <div class="game-card">
+                            <div class="game-card__info">
+                                <div class="game-card__img-box">
+                                    <picture>
+                                        <source media="(orientation: landscape)" srcset="./images/games/game-4-w.jpg">
+                                        <img loading="lazy" class="game-card__img" src="./images/games/game-4.jpg"
+                                            alt="game-selected">
+                                    </picture>
                                 </div>
-                                <div class="faq-triggers__item">
-                                    <div class="faq-triggers__title">
-                                        <span class="faq-triggers__title-text">
-                                            Где мне искать полученный подарок?
-                                        </span>
-                                        <div class="faq-triggers__btn">
-                                            <span class="faq-triggers__btn-plus"></span>
-                                            <span class="faq-triggers__btn-minus"></span>
-                                        </div>
-                                    </div>
-                                    <p class="faq-triggers__text">
-                                        1. Покупка на текущий аккаунт steam по средством добавления аккаунта магазина в
-                                        друзья и получение игры подарком<br>
-                                        2. Добавление аккаунта купленного у магазина в семейным доступ (Аренда игры
-                                        через
-                                        семейный доступ )
-                                    </p>
+                                <div class="game-card__genres">
+                                    <a class="game-card__genre" href="#">
+                                        Экшен
+                                    </a>
+                                    <a class="game-card__genre" href="#">
+                                        Шутер
+                                    </a>
+                                    <a class="game-card__genre" href="#">
+                                        Стратегия
+                                    </a>
                                 </div>
-                                <div class="faq-triggers__item">
-                                    <div class="faq-triggers__title">
-                                        <span class="faq-triggers__title-text">
-                                            Кто вы и почему вам можно доверять?
-                                        </span>
-                                        <div class="faq-triggers__btn">
-                                            <span class="faq-triggers__btn-plus"></span>
-                                            <span class="faq-triggers__btn-minus"></span>
+                            </div>
+                            <div class="game-card__footer">
+                                <div class="game-card__footer-box">
+                                    <div class="game-card__description">
+                                        <h5 class="game-card__title">
+                                            <span class="game-card__link">
+                                                Death Stranding
+                                            </span>
+                                        </h5>
+                                        <p class="game-card__subtitle">
+                                            Покупка на текущий аккаунт steam по средством добавления аккаунта магазина в
+                                            друзья
+                                            и получение игры подаркомДобавление аккаунта купленного у магазина в
+                                            семейным
+                                            доступ
+                                            (Аренда игры через семейный доступ
+                                        </p>
+                                        <div class="game-card__select">
+                                            <div class="game-card__select-wrapp">
+                                                <div id="select-n">
+
+                                                </div>
+                                            </div>
                                         </div>
+                                        <span class="game-card__sum">
+                                            359,599 ₽
+                                        </span>
                                     </div>
-                                    <p class="faq-triggers__text">
-                                        1. Покупка на текущий аккаунт steam по средством добавления аккаунта магазина в
-                                        друзья и получение игры подарком<br>
-                                        2. Добавление аккаунта купленного у магазина в семейным доступ (Аренда игры
-                                        через
-                                        семейный доступ )
-                                    </p>
+
                                 </div>
-                                <div class="faq-triggers__item">
-                                    <div class="faq-triggers__title">
-                                        <span class="faq-triggers__title-text">
-                                            Могу ли я отменить заказ или выбрать другой товар?
-                                        </span>
-                                        <div class="faq-triggers__btn">
-                                            <span class="faq-triggers__btn-plus"></span>
-                                            <span class="faq-triggers__btn-minus"></span>
-                                        </div>
-                                    </div>
-                                    <p class="faq-triggers__text">
-                                        1. Покупка на текущий аккаунт steam по средством добавления аккаунта магазина в
-                                        друзья и получение игры подарком<br>
-                                        2. Добавление аккаунта купленного у магазина в семейным доступ (Аренда игры
-                                        через
-                                        семейный доступ )
-                                    </p>
-                                </div>
-                                <div class="faq-triggers__item">
-                                    <div class="faq-triggers__title">
-                                        <span class="faq-triggers__title-text">
-                                            Как мне не стать жертвой мошенника?
-                                        </span>
-                                        <div class="faq-triggers__btn">
-                                            <span class="faq-triggers__btn-plus"></span>
-                                            <span class="faq-triggers__btn-minus"></span>
-                                        </div>
-                                    </div>
-                                    <p class="faq-triggers__text">
-                                        1. Покупка на текущий аккаунт steam по средством добавления аккаунта магазина в
-                                        друзья и получение игры подарком<br>
-                                        2. Добавление аккаунта купленного у магазина в семейным доступ (Аренда игры
-                                        через
-                                        семейный доступ )
-                                    </p>
-                                </div>
-                                <div class="faq-triggers__item">
-                                    <div class="faq-triggers__title">
-                                        <span class="faq-triggers__title-text">
-                                            Можно ли оплатить заказ вещами?
-                                        </span>
-                                        <div class="faq-triggers__btn">
-                                            <span class="faq-triggers__btn-plus"></span>
-                                            <span class="faq-triggers__btn-minus"></span>
-                                        </div>
-                                    </div>
-                                    <p class="faq-triggers__text">
-                                        1. Покупка на текущий аккаунт steam по средством добавления аккаунта магазина в
-                                        друзья и получение игры подарком<br>
-                                        2. Добавление аккаунта купленного у магазина в семейным доступ (Аренда игры
-                                        через
-                                        семейный доступ )
-                                    </p>
+                                <div class="game-card__action">
+                                    <button class="game-card__action-incard light-accent-btn">
+                                        В корзину
+                                    </button>
+                                    <a class="game-card__action-buy light-btn" href="#">
+                                        Купить
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="content__box"></div>
-                        <div class="content__box"></div>
-                        <div class="content__box"></div>
-                        <div class="content__box"></div>
                     </div>
+                    <article class="game-purchase__offer offers-games">
+                        <div class="offers-games__inner">
+                            <h4 class="offers-games__title">
+                                Также может понравится
+                            </h4>
+                            <div class="offers-games__items">
+                                <div class="game-card race">
+                                    <div class="game-card__info">
+                                        <div class="game-card__img-box">
+                                            <img class="game-card__img" src="./images/games/game-2.jpg"
+                                                alt="Death Stranding game">
+                                        </div>
+                                        <div class="game-card__genres">
+                                            <a class="game-card__genre" href="#">
+                                                Race
+                                            </a>
+                                            <a class="game-card__genre" href="#">
+                                                MMO
+                                            </a>
+                                            <a class="game-card__genre" href="#">
+                                                +1
+                                            </a>
+                                        </div>
 
+                                        <div class="game-card__accounts game-card__accounts-large">
+                                            <a class="game-card__accounts-item game-card__accounts-pers" href="#">
+                                                Личный аккаунт
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="game-card__footer">
+                                        <div class="game-card__footer-box">
+                                            <div class="game-card__description">
+                                                <h5 class="game-card__title">
+                                                    <a class="game-card__link" href="#">
+                                                        Death Stranding
+                                                    </a>
+                                                </h5>
+                                                <p class="game-card__subtitle">
+                                                    Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                    Take-Two
+                                                    заявили о...
+                                                </p>
+                                                <span class="game-card__sum">
+                                                    359,599 ₽
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="game-card__action">
+                                            <button class="game-card__action-incard light-accent-btn">
+                                                В корзину
+                                            </button>
+                                            <a class="game-card__action-buy light-btn" href="#">
+                                                Купить
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="game-card fighting">
+                                    <div class="game-card__info">
+                                        <div class="game-card__img-box">
+                                            <img class="game-card__img"
+                                                src="./images/slides/slides-games/slider-item-1-pr.jpg"
+                                                alt="Death Stranding game">
+                                        </div>
+                                        <div class="game-card__genres">
+                                            <a class="game-card__genre" href="#">
+                                                Экшен
+                                            </a>
+                                            <a class="game-card__genre" href="#">
+                                                Приключения
+                                            </a>
+                                        </div>
+
+                                        <div class="game-card__accounts game-card__accounts-large">
+                                            <a class="game-card__accounts-item game-card__accounts-pers" href="#">
+                                                Личный аккаунт
+                                            </a>
+                                            <a class="game-card__accounts-item game-card__accounts-family" href="#">
+                                                Семейный аккаунт
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="game-card__footer">
+                                        <div class="game-card__footer-box">
+                                            <div class="game-card__description">
+                                                <h5 class="game-card__title">
+                                                    <a class="game-card__link" href="#">
+                                                        Death Stranding
+                                                    </a>
+                                                </h5>
+                                                <p class="game-card__subtitle">
+                                                    Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                    Take-Two
+                                                    заявили о...
+                                                </p>
+                                                <span class="game-card__sum">
+                                                    359,599 ₽
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="game-card__action">
+                                            <button class="game-card__action-incard light-accent-btn">
+                                                В корзину
+                                            </button>
+                                            <a class="game-card__action-buy light-btn" href="#">
+                                                Купить
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="game-card action">
+                                    <div class="game-card__info">
+                                        <div class="game-card__img-box">
+                                            <img class="game-card__img" src="./images/games/game-3.jpg"
+                                                alt="Death Stranding game">
+                                        </div>
+                                        <div class="game-card__genres">
+                                            <a class="game-card__genre" href="#">
+                                                Экшен
+                                            </a>
+                                            <a class="game-card__genre" href="#">
+                                                Приключения
+                                            </a>
+                                        </div>
+
+                                        <div class="game-card__accounts game-card__accounts-large">
+                                            <a class="game-card__accounts-item game-card__accounts-pers" href="#">
+                                                Личный аккаунт
+                                            </a>
+                                            <a class="game-card__accounts-item game-card__accounts-family" href="#">
+                                                Семейный аккаунт
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="game-card__footer">
+                                        <div class="game-card__footer-box">
+                                            <div class="game-card__description">
+                                                <h5 class="game-card__title">
+                                                    <a class="game-card__link" href="#">
+                                                        Death Stranding
+                                                    </a>
+                                                </h5>
+                                                <p class="game-card__subtitle">
+                                                    Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                    Take-Two
+                                                    заявили о...
+                                                </p>
+                                                <span class="game-card__sum">
+                                                    359,599 ₽
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="game-card__action">
+                                            <button class="game-card__action-incard light-accent-btn">
+                                                В корзину
+                                            </button>
+                                            <a class="game-card__action-buy light-btn" href="#">
+                                                Купить
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="game-card fighting">
+                                    <div class="game-card__info">
+                                        <div class="game-card__img-box">
+                                            <img class="game-card__img" src="./images/games/game-1.jpg"
+                                                alt="Death Stranding game">
+                                        </div>
+                                        <div class="game-card__genres">
+                                            <a class="game-card__genre" href="#">
+                                                Экшен
+                                            </a>
+                                            <a class="game-card__genre" href="#">
+                                                Приключения
+                                            </a>
+                                        </div>
+
+                                        <div class="game-card__accounts game-card__accounts-large">
+                                            <a class="game-card__accounts-item game-card__accounts-pers" href="#">
+                                                Личный аккаунт
+                                            </a>
+                                            <a class="game-card__accounts-item game-card__accounts-family" href="#">
+                                                Семейный аккаунт
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="game-card__footer">
+                                        <div class="game-card__footer-box">
+                                            <div class="game-card__description">
+                                                <h5 class="game-card__title">
+                                                    <a class="game-card__link" href="#">
+                                                        Death Stranding
+                                                    </a>
+                                                </h5>
+                                                <p class="game-card__subtitle">
+                                                    Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                    Take-Two
+                                                    заявили о...
+                                                </p>
+                                                <span class="game-card__sum">
+                                                    359,599 ₽
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="game-card__action">
+                                            <button class="game-card__action-incard light-accent-btn">
+                                                В корзину
+                                            </button>
+                                            <a class="game-card__action-buy light-btn" href="#">
+                                                Купить
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="popup__close">
+                        <span class="popup__close-item">
+                            &#10006;
+                        </span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+
     </main>
 
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapp">
                 <nav class="nav">
+
                     <ul class="nav__list">
-                        <li class="nav__item" id="catalog">
-                            <a class="nav__link" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./catalog.html">
                                 Каталог
                             </a>
                         </li>
-                        <li class="nav__item" id="review">
-                            <a class="nav__link" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./reviews.html">
                                 Отзывы
                             </a>
                         </li>
-                        <li class="nav__item" id="ans-ques">
-                            <a class="nav__link" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./quest-ans.html">
                                 Вопрос-ответ
                             </a>
                         </li>
                     </ul>
-                </nav>
 
+                </nav>
                 <img class="footer__logo" src="./images/logo-footer.svg" alt="logo">
 
                 <article class="footer__social social">

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="./js/slider.min.js" defer></script>
     <script src="./js/main.min.js" defer></script>
     <title>Game</title>
 </head>
@@ -69,7 +70,7 @@
                     <div class="header__basket basket">
                         <a class="basket__box" href="./basket.html">
                             <span class="basket__num">3</span>
-                            <img src="./images/icons/header/basket.svg" alt="basket">
+                            <img loading="lazy" src="./images/icons/header/basket.svg" alt="basket">
                         </a>
                     </div>
                     <button class="header__btn-menu">
@@ -110,7 +111,7 @@
                             <p class="top-slider__subtitle header-item__subtitle">
                                 Более 10 категорий. Бестселлеры. Новинки.
                             </p>
-                            <a class="top-slider__button accent-btn" href="#">Каталог игр</a>
+                            <a class="top-slider__button accent-btn" href="./catalog.html">Каталог игр</a>
                         </div>
                     </div>
 
@@ -177,19 +178,21 @@
                             </a>
                         </div>
 
-                        <div class="slider swiper">
-                            <div class="slider__items swiper-wrapper">
-                                <div class="slider__item swiper-slide">
+                        <div class="slider">
+                            <!-- Обёртка элементов    -->
+                            <div class="slider__items" id="slider">
+                                <!-- Первый элемент -->
+                                <div class="slider__item">
                                     <div class="game-card-large game-card">
                                         <div class="game-card__info">
                                             <div class="game-card__img-box">
-                                                <img class="game-card__img"
+                                                <img loading="lazy" class="game-card__img"
                                                     src="./images/slides/slides-games/slider-item-1-pr.jpg"
                                                     alt="Death Stranding game">
                                             </div>
                                             <div class="game-card__genres">
                                                 <a class="game-card__genre" href="#">
-                                                    Экшн
+                                                    Экшен
                                                 </a>
                                                 <a class="game-card__genre" href="#">
                                                     Приключения
@@ -237,13 +240,13 @@
                                     <div class="game-card">
                                         <div class="game-card__info">
                                             <div class="game-card__img-box">
-                                                <img class="game-card__img"
+                                                <img loading="lazy" class="game-card__img"
                                                     src="./images/slides/slides-games/slider-item-2-small-pr.jpg"
                                                     alt="Death Stranding game">
                                             </div>
                                             <div class="game-card__genres">
                                                 <a class="game-card__genre" href="#">
-                                                    Экшн
+                                                    Экшен
                                                 </a>
                                                 <a class="game-card__genre" href="#">
                                                     Шутер
@@ -288,13 +291,331 @@
                                     <div class="game-card">
                                         <div class="game-card__info">
                                             <div class="game-card__img-box">
-                                                <img class="game-card__img"
+                                                <img loading="lazy" class="game-card__img"
                                                     src="./images/slides/slides-games/slider-item-3-small-pr.jpg"
                                                     alt="Death Stranding game">
                                             </div>
                                             <div class="game-card__genres">
                                                 <a class="game-card__genre" href="#">
-                                                    Экшн
+                                                    Экшен
+                                                </a>
+                                                <a class="game-card__genre" href="#">
+                                                    Приключения
+                                                </a>
+                                            </div>
+
+                                            <div class="game-card__accounts game-card__accounts-large">
+                                                <a class="game-card__accounts-item game-card__accounts-family" href="#">
+                                                    Семейный аккаунт
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="game-card__footer">
+                                            <div class="game-card__footer-box">
+                                                <div class="game-card__description">
+                                                    <h5 class="game-card__title">
+                                                        <a class="game-card__link" href="#">
+                                                            Death Stranding
+                                                        </a>
+                                                    </h5>
+                                                    <p class="game-card__subtitle">
+                                                        Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                        Take-Two
+                                                        заявили о...
+                                                    </p>
+                                                    <span class="game-card__sum">
+                                                        359,599 ₽
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="game-card__action">
+                                                <button class="game-card__action-incard light-accent-btn">
+                                                    В корзину
+                                                </button>
+                                                <a class="game-card__action-buy light-btn" href="#">
+                                                    Купить
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Второй элемент -->
+                                <div class="slider__item">
+                                    <div class="game-card-large game-card">
+                                        <div class="game-card__info">
+                                            <div class="game-card__img-box">
+                                                <img loading="lazy" class="game-card__img"
+                                                    src="./images/slides/slides-games/slider-item-1-pr.jpg"
+                                                    alt="Death Stranding game">
+                                            </div>
+                                            <div class="game-card__genres">
+                                                <a class="game-card__genre" href="#">
+                                                    Экшен
+                                                </a>
+                                                <a class="game-card__genre" href="#">
+                                                    Приключения
+                                                </a>
+                                            </div>
+
+                                            <div class="game-card__accounts game-card__accounts-large">
+                                                <a class="game-card__accounts-item game-card__accounts-pers" href="#">
+                                                    Личный аккаунт
+                                                </a>
+                                                <a class="game-card__accounts-item game-card__accounts-family" href="#">
+                                                    Семейный аккаунт
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="game-card__footer">
+                                            <div class="game-card__footer-box">
+                                                <div class="game-card__description">
+                                                    <h5 class="game-card__title">
+                                                        <a class="game-card__link" href="#">
+                                                            Death Stranding
+                                                        </a>
+                                                    </h5>
+                                                    <p class="game-card__subtitle">
+                                                        Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                        Take-Two
+                                                        заявили о...
+                                                    </p>
+                                                    <span class="game-card__sum">
+                                                        359,599 ₽
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="game-card__action">
+                                                <button class="game-card__action-incard light-accent-btn">
+                                                    В корзину
+                                                </button>
+                                                <a class="game-card__action-buy light-btn" href="#">
+                                                    Купить
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="game-card">
+                                        <div class="game-card__info">
+                                            <div class="game-card__img-box">
+                                                <img loading="lazy" class="game-card__img"
+                                                    src="./images/slides/slides-games/slider-item-2-small-pr.jpg"
+                                                    alt="Death Stranding game">
+                                            </div>
+                                            <div class="game-card__genres">
+                                                <a class="game-card__genre" href="#">
+                                                    Экшен
+                                                </a>
+                                                <a class="game-card__genre" href="#">
+                                                    Шутер
+                                                </a>
+                                            </div>
+
+                                            <div class="game-card__accounts game-card__accounts-large">
+                                                <a class="game-card__accounts-item game-card__accounts-pers" href="#">
+                                                    Личный аккаунт
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="game-card__footer">
+                                            <div class="game-card__footer-box">
+                                                <div class="game-card__description">
+                                                    <h5 class="game-card__title">
+                                                        <a class="game-card__link" href="#">
+                                                            Death Stranding
+                                                        </a>
+                                                    </h5>
+                                                    <p class="game-card__subtitle">
+                                                        Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                        Take-Two
+                                                        заявили о...
+                                                    </p>
+                                                    <span class="game-card__sum">
+                                                        359,599 ₽
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="game-card__action">
+                                                <button class="game-card__action-incard light-accent-btn">
+                                                    В корзину
+                                                </button>
+                                                <a class="game-card__action-buy light-btn" href="#">
+                                                    Купить
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="game-card">
+                                        <div class="game-card__info">
+                                            <div class="game-card__img-box">
+                                                <img loading="lazy" class="game-card__img"
+                                                    src="./images/slides/slides-games/slider-item-3-small-pr.jpg"
+                                                    alt="Death Stranding game">
+                                            </div>
+                                            <div class="game-card__genres">
+                                                <a class="game-card__genre" href="#">
+                                                    Экшен
+                                                </a>
+                                                <a class="game-card__genre" href="#">
+                                                    Приключения
+                                                </a>
+                                            </div>
+
+                                            <div class="game-card__accounts game-card__accounts-large">
+                                                <a class="game-card__accounts-item game-card__accounts-family" href="#">
+                                                    Семейный аккаунт
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="game-card__footer">
+                                            <div class="game-card__footer-box">
+                                                <div class="game-card__description">
+                                                    <h5 class="game-card__title">
+                                                        <a class="game-card__link" href="#">
+                                                            Death Stranding
+                                                        </a>
+                                                    </h5>
+                                                    <p class="game-card__subtitle">
+                                                        Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                        Take-Two
+                                                        заявили о...
+                                                    </p>
+                                                    <span class="game-card__sum">
+                                                        359,599 ₽
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="game-card__action">
+                                                <button class="game-card__action-incard light-accent-btn">
+                                                    В корзину
+                                                </button>
+                                                <a class="game-card__action-buy light-btn" href="#">
+                                                    Купить
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Третий элемент  -->
+                                <div class="slider__item">
+                                    <div class="game-card-large game-card">
+                                        <div class="game-card__info">
+                                            <div class="game-card__img-box">
+                                                <img loading="lazy" class="game-card__img"
+                                                    src="./images/slides/slides-games/slider-item-1-pr.jpg"
+                                                    alt="Death Stranding game">
+                                            </div>
+                                            <div class="game-card__genres">
+                                                <a class="game-card__genre" href="#">
+                                                    Экшен
+                                                </a>
+                                                <a class="game-card__genre" href="#">
+                                                    Приключения
+                                                </a>
+                                            </div>
+
+                                            <div class="game-card__accounts game-card__accounts-large">
+                                                <a class="game-card__accounts-item game-card__accounts-pers" href="#">
+                                                    Личный аккаунт
+                                                </a>
+                                                <a class="game-card__accounts-item game-card__accounts-family" href="#">
+                                                    Семейный аккаунт
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="game-card__footer">
+                                            <div class="game-card__footer-box">
+                                                <div class="game-card__description">
+                                                    <h5 class="game-card__title">
+                                                        <a class="game-card__link" href="#">
+                                                            Death Stranding
+                                                        </a>
+                                                    </h5>
+                                                    <p class="game-card__subtitle">
+                                                        Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                        Take-Two
+                                                        заявили о...
+                                                    </p>
+                                                    <span class="game-card__sum">
+                                                        359,599 ₽
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="game-card__action">
+                                                <button class="game-card__action-incard light-accent-btn">
+                                                    В корзину
+                                                </button>
+                                                <a class="game-card__action-buy light-btn" href="#">
+                                                    Купить
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="game-card">
+                                        <div class="game-card__info">
+                                            <div class="game-card__img-box">
+                                                <img loading="lazy" class="game-card__img"
+                                                    src="./images/slides/slides-games/slider-item-2-small-pr.jpg"
+                                                    alt="Death Stranding game">
+                                            </div>
+                                            <div class="game-card__genres">
+                                                <a class="game-card__genre" href="#">
+                                                    Экшен
+                                                </a>
+                                                <a class="game-card__genre" href="#">
+                                                    Шутер
+                                                </a>
+                                            </div>
+
+                                            <div class="game-card__accounts game-card__accounts-large">
+                                                <a class="game-card__accounts-item game-card__accounts-pers" href="#">
+                                                    Личный аккаунт
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="game-card__footer">
+                                            <div class="game-card__footer-box">
+                                                <div class="game-card__description">
+                                                    <h5 class="game-card__title">
+                                                        <a class="game-card__link" href="#">
+                                                            Death Stranding
+                                                        </a>
+                                                    </h5>
+                                                    <p class="game-card__subtitle">
+                                                        Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                        Take-Two
+                                                        заявили о...
+                                                    </p>
+                                                    <span class="game-card__sum">
+                                                        359,599 ₽
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="game-card__action">
+                                                <button class="game-card__action-incard light-accent-btn">
+                                                    В корзину
+                                                </button>
+                                                <a class="game-card__action-buy light-btn" href="#">
+                                                    Купить
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="game-card">
+                                        <div class="game-card__info">
+                                            <div class="game-card__img-box">
+                                                <img loading="lazy" class="game-card__img"
+                                                    src="./images/slides/slides-games/slider-item-3-small-pr.jpg"
+                                                    alt="Death Stranding game">
+                                            </div>
+                                            <div class="game-card__genres">
+                                                <a class="game-card__genre" href="#">
+                                                    Экшен
                                                 </a>
                                                 <a class="game-card__genre" href="#">
                                                     Приключения
@@ -338,6 +659,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
                     </div>
@@ -369,7 +691,7 @@
                     </ul>
                 </nav>
 
-                <img class="footer__logo" src="./images/logo-footer.svg" alt="logo">
+                <img loading="lazy" class="footer__logo" src="./images/logo-footer.svg" alt="logo">
 
                 <article class="footer__social social">
                     <a class="social__item" href="#">

@@ -30,20 +30,14 @@
                             <path
                                 d="M44.2693 19.9488C37.8145 22.8665 34.9363 30.4929 37.8539 36.9478C40.772 43.4038 48.3978 46.2812 54.8526 43.3636C61.3075 40.4459 64.1859 32.8203 61.2678 26.3643C58.3502 19.9094 50.724 17.0312 44.2693 19.9488ZM60.1357 55.0516C47.236 60.8824 31.9968 55.1316 26.1657 42.2309C20.3351 29.3315 26.0868 14.0916 38.9863 8.26086C51.8856 2.43023 67.124 8.1823 72.9547 21.0818C78.7857 33.9825 73.0349 49.2209 60.1357 55.0516Z"
                                 fill="#4930EC" />
-                            <path d="M54.807 27.3707L42.8781 32.7627L30.5066 5.39211L42.4355 0L54.807 27.3707Z"
-                                fill="#008DD2" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M6.91007 5.2312H11.6654H19.6892V56.5375H6.91007V22.0875H0L6.41908 5.2312H6.91007Z"
-                                fill="white" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M83.4566 5.2312H88.3534H96.2358V56.5375H83.4566V22.0875H76.688L83.1071 5.2312H83.4566Z"
-                                fill="white" />
+                            <path d="M54.807 27.3707L42.8781 32.7627L30.5066 5.39211L42.4355 0L54.807 27.3707Z" fill="#008DD2" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.91007 5.2312H11.6654H19.6892V56.5375H6.91007V22.0875H0L6.41908 5.2312H6.91007Z" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M83.4566 5.2312H88.3534H96.2358V56.5375H83.4566V22.0875H76.688L83.1071 5.2312H83.4566Z" fill="white" />
                         </svg>
                     </a>
                     <div class="header__search search">
                         <!-- <label class="search__label" for="search"></label> -->
-                        <input class="search__input" type="search" name="search" id="input-search"
-                            placeholder="Поиск...">
+                        <input class="search__input" type="search" name="search" id="input-search" placeholder="Поиск...">
                     </div>
                     <nav class="nav burger-menu" data-nav="burger">
                         <ul class="nav__list">
@@ -97,7 +91,7 @@
 
         <!-- Заказ игры с подобными товарами -->
 
-        <div class="game-purchase popup">
+        <div class="game-purchase popup" style="display: none;">
             <div class="container">
                 <div class="game-purchase__wrapp popup__wrapp">
                     <div class="selected-game">
@@ -105,9 +99,9 @@
                             <div class="game-card__info">
                                 <div class="game-card__img-box">
                                     <picture>
+                                        <!-- <source media="(max-width:1200px)" srcset="./images/games/game-4-w.jpg"> -->
                                         <source media="(orientation: landscape)" srcset="./images/games/game-4-w.jpg">
-                                        <img loading="lazy" class="game-card__img" src="./images/games/game-4.jpg"
-                                            alt="game-selected">
+                                        <img loading="lazy" class="game-card__img" src="./images/games/game-4.jpg" alt="game-selected">
                                     </picture>
                                 </div>
                                 <div class="game-card__genres">
@@ -171,8 +165,7 @@
                                 <div class="game-card race">
                                     <div class="game-card__info">
                                         <div class="game-card__img-box">
-                                            <img class="game-card__img" src="./images/games/game-2.jpg"
-                                                alt="Death Stranding game">
+                                            <img class="game-card__img" src="./images/games/game-2.jpg" alt="Death Stranding game">
                                         </div>
                                         <div class="game-card__genres">
                                             <a class="game-card__genre" href="#">
@@ -224,9 +217,7 @@
                                 <div class="game-card fighting">
                                     <div class="game-card__info">
                                         <div class="game-card__img-box">
-                                            <img class="game-card__img"
-                                                src="./images/slides/slides-games/slider-item-1-pr.jpg"
-                                                alt="Death Stranding game">
+                                            <img class="game-card__img" src="./images/slides/slides-games/slider-item-1-pr.jpg" alt="Death Stranding game">
                                         </div>
                                         <div class="game-card__genres">
                                             <a class="game-card__genre" href="#">
@@ -278,8 +269,7 @@
                                 <div class="game-card action">
                                     <div class="game-card__info">
                                         <div class="game-card__img-box">
-                                            <img class="game-card__img" src="./images/games/game-3.jpg"
-                                                alt="Death Stranding game">
+                                            <img class="game-card__img" src="./images/games/game-3.jpg" alt="Death Stranding game">
                                         </div>
                                         <div class="game-card__genres">
                                             <a class="game-card__genre" href="#">
@@ -331,8 +321,7 @@
                                 <div class="game-card fighting">
                                     <div class="game-card__info">
                                         <div class="game-card__img-box">
-                                            <img class="game-card__img" src="./images/games/game-1.jpg"
-                                                alt="Death Stranding game">
+                                            <img class="game-card__img" src="./images/games/game-1.jpg" alt="Death Stranding game">
                                         </div>
                                         <div class="game-card__genres">
                                             <a class="game-card__genre" href="#">
@@ -385,14 +374,493 @@
                         </div>
                     </article>
                     <div class="popup__close">
-                        <span class="popup__close-item">
+                        <button class="popup__close-item" type="button">
                             &#10006;
-                        </span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Удалить товар из корзины -->
+
+        <div class="delete popup" style="display: none;">
+            <div class="container">
+                <div class="delete__wrapp popup__wrapp">
+                    <span class="delete__title">Уверены, что хотите удалить товар из корзины</span>
+                    <div class="delete__buttons">
+                        <button class="light-accent-btn delete__button" type="button">Удалить</button>
+                        <button class="light-btn delete__button" type="button">Отменить</button>
+                    </div>
+                    <div class="popup__close">
+                        <button class="popup__close-item" type="button">
+                            &#10006;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Задать вопрос -->
+
+        <div class="ask popup" style="display: none;">
+            <div class="container">
+                <div class="ask__wrapp popup__wrapp">
+                    <span class="ask__title">Задать вопрос</span>
+                    <form class="ask__form" action="#">
+                        <div id="select-3">
+
+                        </div>
+                        <span class="ask__symbol">0 из 180 символов</span>
+
+                        <div class="ask__items">
+                            <div class="popup__form-item">
+                                <textarea class="ask__short popup__field popup__field--message" name="short" placeholder="Краткая суть вопроса" required></textarea>
+                            </div>
+                            <div class="popup__form-item">
+                                <textarea class="ask__long popup__field popup__field--message" name="short" placeholder="Описание вопроса" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="ask__buttons">
+                            <button class="light-accent-btn ask__button" type="submit">Задать вопрос</button>
+                            <button class="ask__photo" type="button">Прикрепить фото</button>
+                        </div>
+                    </form>
+                    <div class="popup__close">
+                        <button class="popup__close-item" type="button">
+                            &#10006;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Авторизация -->
+
+        <div class="authorization popup" style="display: none;">
+            <div class="container">
+                <div class="authorization__wrapp popup__wrapp">
+                    <div class="authorization__content">
+                        <span class="authorization__title">Авторизация</span>
+                        <p class="authorization__text">
+                            Вы еще не зарегестрированы? Пройдите <a class="authorization__link" href="#">регистрацию</a>!
+                        </p>
+                        <form class="authorization__form" action="#">
+                            <div class="authorization__items">
+                                <div class="popup__form-item">
+                                    <input class="authorization__field popup__field" type="email" name="authorization-email" placeholder="Введите логин или почту" required>
+                                </div>
+                                <div class="popup__form-item">
+                                    <input class="authorization__field popup__field" name="authorization-password" type="password" placeholder="Введите пароль" required>
+                                    <button class="popup__form-password" type="button" aria-label="скрыть / показать пароль"></button>
+                                </div>
+                            </div>
+
+                            <button class="light-accent-btn authorization__button" type="submit" disabled>Войти</button>
+                        </form>
+                        <div class="popup__close">
+                            <button class="popup__close-item" type="button">
+                                &#10006;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Регистрация -->
+
+        <div class="registration popup" style="display: none;">
+            <div class="container">
+                <div class="registration__wrapp popup__wrapp">
+                    <div class="registration__content">
+                        <span class="registration__title">Регистрация</span>
+                        <p class="registration__text">
+                            Вы уже зарегестрированы?
+                            Выполните вход <a class="registration__link" href="#">вход </a>в аккаунт!
+                        </p>
+                        <form class="registration__form" action="#">
+                            <div class="registration__items">
+                                <div class="popup__form-item popup__form-item--false">
+                                    <input class="registration__field popup__field" type="text" name="registration-login" placeholder="Логин" required>
+                                    <p class="popup__error">Логин уже используется. Придумайте новый</p>
+                                </div>
+                                <div class="popup__form-item">
+                                    <input class="registration__field popup__field" type="email" name="registration-email" placeholder="Почта" required>
+                                </div>
+                                <div class="popup__form-item popup__form-item--true">
+                                    <button class="popup__form-password" type="button" aria-label="скрыть / показать пароль"></button>
+                                    <input class="registration__field popup__field" name="registration-password" type="password" placeholder="Пароль" required>
+                                </div>
+                            </div>
+
+                            <button class="light-accent-btn registration__button" type="submit" disabled>Зарегестрироваться</button>
+
+                            <p class="registration__agree">Нажимая на кнопку я принимаю условия публичной оферты и согласен(а) на обработку персональных данных.</p>
+                        </form>
+                        <div class="popup__close">
+                            <button class="popup__close-item" type="button">
+                                &#10006;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Комментарий -->
+
+        <div class="comment popup" style="display: none;">
+            <div class="container">
+                <div class="comment__wrapp popup__wrapp">
+                    <div class="comment__content">
+                        <span class="comment__title">Оставить комментарий</span>
+                        <form class="registration__form" action="#">
+                            <p class="comment__number">Номер заказа: <span>23</span></p>
+                            <div class="popup__form-item">
+                                <textarea class="comment__message popup__field popup__field--message" name="comment" placeholder="Комментарий" required></textarea>
+                            </div>
+                            <div class="comment__rating">
+                                <p class="comment__grade">Ваша оценка:</p>
+                                <ul class="comment__stars">
+                                    <li class="comment__star" style="background-image: url('images/icons/star-rating.svg');"></li>
+                                    <li class="comment__star" style="background-image: url('images/icons/star-rating.svg');"></li>
+                                    <li class="comment__star" style="background-image: url('images/icons/star-rating.svg');"></li>
+                                    <li class="comment__star" style="background-image: url('images/icons/star-rating.svg');"></li>
+                                    <li class="comment__star" style="background-image: url('images/icons/star-rating-reverse.svg');"></li>
+                                </ul>
+                            </div>
+                            <div class="comment__show">
+                                <label class="comment__check">
+                                    <input class="comment__hidden" type="checkbox" name="comment-show">
+                                    <span class="comment__visible" aria-hidden="true"></span>
+                                    Показать игру
+                                </label>
+                                <p class="comment__subtext">Разрешите нам показать товар из вашего заказа. Это поможет нам стать лучше!</p>
+                            </div>
+                            <button class="light-accent-btn comment__button" type="submit">Оставить комментарий</button>
+                        </form>
+                        <div class="popup__close">
+                            <button class="popup__close-item" type="button">
+                                &#10006;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Приняли отзыв -->
+
+        <div class="feedback-true popup" style="display: none;">
+            <div class="container">
+                <div class="feedback-true__wrapp popup__wrapp">
+                    <div class="feedback-true__content">
+                        <span class="feedback-true__title">Мы приняли ваш отзыв!</span>
+                        <p class="feedback-true__text">
+                            Спасибо что уделили время! Это помогает нам становится лучше!
+                        </p>
+                        <button class="light-accent-btn feedback-true__button" type="button">Отлично!</button>
+                        <div class="popup__close">
+                            <button class="popup__close-item" type="button">
+                                &#10006;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Заказ доставлен -->
+
+        <div class="order-popup popup" style="display: none;">
+            <div class="container">
+                <div class="order-popup__wrapp popup__wrapp">
+                    <div class="order-popup__content">
+                        <ul class="order-popup__products">
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="order-popup__info">
+                            <div class="order-popup__top">
+                                <span class="order-popup__title">Заявка на заказ №23</span>
+                                <span class="order-popup__date">26 ноя, 2022</span>
+                            </div>
+                            <span class="order-popup__status order-popup__status--delivered">Заказ доставлен</span>
+                            <div class="order-popup__count">
+                                <span>Количество: </span>
+                                <span class="order-popup__number">4 товара</span>
+                            </div>
+                            <span class="order-popup__price">359,599 ₽</span>
+                        </div>
+                        <div class="popup__close">
+                            <button class="popup__close-item" type="button">
+                                &#10006;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Заказ отменен -->
+        
+        <div class="order-popup popup" style="display: none;">
+            <div class="container">
+                <div class="order-popup__wrapp popup__wrapp">
+                    <div class="order-popup__content">
+                        <ul class="order-popup__products">
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="order-popup__info">
+                            <div class="order-popup__top">
+                                <span class="order-popup__title">Заявка на заказ №23</span>
+                                <span class="order-popup__date">26 ноя, 2022</span>
+                            </div>
+                            <span class="order-popup__status order-popup__status--cancel">Заказ отменен</span>
+                            <div class="order-popup__count">
+                                <span>Количество: </span>
+                                <span class="order-popup__number">4 товара</span>
+                            </div>
+                            <span class="order-popup__price">359,599 ₽</span>
+                            <button class="order-popup__repeat light-btn" type="button">Повторить заказ</button>
+                        </div>
+                        <button class="order-popup__repeat order-popup__repeat--mobile light-btn" type="button">Повторить заказ</button>
+                        <div class="popup__close">
+                            <button class="popup__close-item" type="button">
+                                &#10006;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Заказ ожидание оплаты -->
+        
+        <div class="order-popup popup" style="display: none;">
+            <div class="container">
+                <div class="order-popup__wrapp popup__wrapp">
+                    <div class="order-popup__content">
+                        <ul class="order-popup__products">
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="order-popup__info">
+                            <div class="order-popup__top">
+                                <span class="order-popup__title">Заявка на заказ №23</span>
+                                <span class="order-popup__date">26 ноя, 2022</span>
+                            </div>
+                            <span class="order-popup__status order-popup__status--pay">Ожидает оплаты</span>
+                            <div class="order-popup__count">
+                                <span>Количество: </span>
+                                <span class="order-popup__number">4 товара</span>
+                            </div>
+                            <span class="order-popup__price">359,599 ₽</span>
+                            <div class="order-popup__buttons">
+                                <button class="order-popup__button light-accent-btn" type="button">Оплатить</button>
+                                <button class="order-popup__button light-btn" type="button">Отменить</button>
+                            </div>
+                        </div>
+                        <div class="order-popup__buttons order-popup__buttons--mobile">
+                            <button class="order-popup__button light-accent-btn" type="button">Оплатить</button>
+                            <button class="order-popup__button light-btn" type="button">Отменить</button>
+                        </div>
+                        <div class="popup__close">
+                            <button class="popup__close-item" type="button">
+                                &#10006;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Заказ ожидание -->
+        
+        <div class="order-popup popup" style="display: none;">
+            <div class="container">
+                <div class="order-popup__wrapp popup__wrapp">
+                    <div class="order-popup__content">
+                        <ul class="order-popup__products">
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-popup__product">
+                                <article class="popup-product">
+                                    <img class="popup-product__img" src="images/games/small/game-1.png" alt="Death Stranding" width="90" height="90" loading="lazy">
+                                    <div class="popup-product__info">
+                                        <span class="popup-product__title">Death Stranding</span>
+                                        <span class="popup-product__price">359,599 ₽</span>
+                                        <p class="popup-product__text">Покупка через семейный доступ</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="order-popup__info">
+                            <div class="order-popup__top">
+                                <span class="order-popup__title">Заявка на заказ №23</span>
+                                <span class="order-popup__date">26 ноя, 2022</span>
+                            </div>
+                            <span class="order-popup__status order-popup__status--expectation">Ожидайте запрос от менеджера</span>
+                            <div class="order-popup__count">
+                                <span>Количество: </span>
+                                <span class="order-popup__number">4 товара</span>
+                            </div>
+                            <span class="order-popup__price">359,599 ₽</span>
+                        </div>
+                        <div class="popup__close">
+                            <button class="popup__close-item" type="button">
+                                &#10006;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">

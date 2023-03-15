@@ -79,10 +79,12 @@
                     </button>
                     <article class="header__form form-log">
                         <div class="form-log__inner burger-menu" data-nav="burger">
-                            <button class="form-log__register light-accent-btn">
+                            <button class="form-log__register light-accent-btn" data-path="registration-path"
+                                data-animation="fadeInUp" data-speed="200">
                                 Регистрация
                             </button>
-                            <button class="form-log__login">
+                            <button class="form-log__login" data-path="authorization-path" data-animation="fadeInUp"
+                                data-speed="200">
                                 Войти
                             </button>
                         </div>
@@ -211,7 +213,8 @@
                                             <div class="game-card__footer-box">
                                                 <div class="game-card__description">
                                                     <h5 class="game-card__title">
-                                                        <a class="game-card__link" href="#">
+                                                        <a class="game-card__link" href="#" data-path="game-path"
+                                                            data-animation="fadeInUp" data-speed="200">
                                                             Death Stranding
                                                         </a>
                                                     </h5>
@@ -262,7 +265,8 @@
                                             <div class="game-card__footer-box">
                                                 <div class="game-card__description">
                                                     <h5 class="game-card__title">
-                                                        <a class="game-card__link" href="#">
+                                                        <a class="game-card__link" href="#" data-path="game-path"
+                                                            data-animation="fadeInUp" data-speed="200">
                                                             Death Stranding
                                                         </a>
                                                     </h5>
@@ -313,7 +317,8 @@
                                             <div class="game-card__footer-box">
                                                 <div class="game-card__description">
                                                     <h5 class="game-card__title">
-                                                        <a class="game-card__link" href="#">
+                                                        <a class="game-card__link" href="#" data-path="game-path"
+                                                            data-animation="fadeInUp" data-speed="200">
                                                             Death Stranding
                                                         </a>
                                                     </h5>
@@ -370,7 +375,8 @@
                                             <div class="game-card__footer-box">
                                                 <div class="game-card__description">
                                                     <h5 class="game-card__title">
-                                                        <a class="game-card__link" href="#">
+                                                        <a class="game-card__link" href="#" data-path="game-path"
+                                                            data-animation="fadeInUp" data-speed="200">
                                                             Death Stranding
                                                         </a>
                                                     </h5>
@@ -421,7 +427,8 @@
                                             <div class="game-card__footer-box">
                                                 <div class="game-card__description">
                                                     <h5 class="game-card__title">
-                                                        <a class="game-card__link" href="#">
+                                                        <a class="game-card__link" href="#" data-path="game-path"
+                                                            data-animation="fadeInUp" data-speed="200">
                                                             Death Stranding
                                                         </a>
                                                     </h5>
@@ -472,7 +479,8 @@
                                             <div class="game-card__footer-box">
                                                 <div class="game-card__description">
                                                     <h5 class="game-card__title">
-                                                        <a class="game-card__link" href="#">
+                                                        <a class="game-card__link" href="#" data-path="game-path"
+                                                            data-animation="fadeInUp" data-speed="200">
                                                             Death Stranding
                                                         </a>
                                                     </h5>
@@ -529,7 +537,8 @@
                                             <div class="game-card__footer-box">
                                                 <div class="game-card__description">
                                                     <h5 class="game-card__title">
-                                                        <a class="game-card__link" href="#">
+                                                        <a class="game-card__link" href="#" data-path="game-path"
+                                                            data-animation="fadeInUp" data-speed="200">
                                                             Death Stranding
                                                         </a>
                                                     </h5>
@@ -580,7 +589,8 @@
                                             <div class="game-card__footer-box">
                                                 <div class="game-card__description">
                                                     <h5 class="game-card__title">
-                                                        <a class="game-card__link" href="#">
+                                                        <a class="game-card__link" href="#" data-path="game-path"
+                                                            data-animation="fadeInUp" data-speed="200">
                                                             Death Stranding
                                                         </a>
                                                     </h5>
@@ -631,7 +641,8 @@
                                             <div class="game-card__footer-box">
                                                 <div class="game-card__description">
                                                     <h5 class="game-card__title">
-                                                        <a class="game-card__link" href="#">
+                                                        <a class="game-card__link" href="#" data-path="game-path"
+                                                            data-animation="fadeInUp" data-speed="200">
                                                             Death Stranding
                                                         </a>
                                                     </h5>
@@ -672,18 +683,18 @@
             <div class="footer__wrapp">
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item" id="catalog">
-                            <a class="nav__link" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./catalog.html">
                                 Каталог
                             </a>
                         </li>
-                        <li class="nav__item" id="review">
-                            <a class="nav__link" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./reviews.html">
                                 Отзывы
                             </a>
                         </li>
-                        <li class="nav__item" id="ans-ques">
-                            <a class="nav__link" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./faq.html">
                                 Вопрос-ответ
                             </a>
                         </li>
@@ -736,6 +747,378 @@
             </div>
         </div>
     </footer>
+
+    <!-- popups -->
+
+    <div class="game-purchase popup">
+        <div class="container">
+            <!-- Заказ игры с подобными товарами -->
+            <div class="game-purchase__wrapp popup__wrapp" data-target="game-path">
+                <div class="selected-game">
+                    <div class="game-card">
+                        <div class="game-card__info">
+                            <div class="game-card__img-box">
+                                <picture>
+                                    <!-- <source media="(max-width:1200px)" srcset="./images/games/game-4-w.jpg"> -->
+                                    <source media="(orientation: landscape)" srcset="./images/games/game-4-w.jpg">
+                                    <img loading="lazy" class="game-card__img" src="./images/games/game-4.jpg"
+                                        alt="game-selected">
+                                </picture>
+                            </div>
+                            <div class="game-card__genres">
+                                <a class="game-card__genre" href="#">
+                                    Экшен
+                                </a>
+                                <a class="game-card__genre" href="#">
+                                    Шутер
+                                </a>
+                                <a class="game-card__genre" href="#">
+                                    Стратегия
+                                </a>
+                            </div>
+                        </div>
+                        <div class="game-card__footer">
+                            <div class="game-card__footer-box">
+                                <div class="game-card__description">
+                                    <h5 class="game-card__title">
+                                        <span class="game-card__link">
+                                            Death Stranding
+                                        </span>
+                                    </h5>
+                                    <p class="game-card__subtitle">
+                                        Покупка на текущий аккаунт steam по средством добавления аккаунта магазина в
+                                        друзья
+                                        и получение игры подаркомДобавление аккаунта купленного у магазина в
+                                        семейным
+                                        доступ
+                                        (Аренда игры через семейный доступ
+                                    </p>
+                                    <div class="game-card__select">
+                                        <div class="game-card__select-wrapp">
+                                            <div id="select-n">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="game-card__sum">
+                                        359,599 ₽
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="game-card__action">
+                                <button class="game-card__action-incard light-accent-btn">
+                                    В корзину
+                                </button>
+                                <a class="game-card__action-buy light-btn" href="#">
+                                    Купить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="game-purchase__offer offers-games">
+                    <div class="offers-games__inner">
+                        <h4 class="offers-games__title">
+                            Также может понравится
+                        </h4>
+                        <div class="offers-games__items">
+                            <div class="game-card race">
+                                <div class="game-card__info">
+                                    <div class="game-card__img-box">
+                                        <img class="game-card__img" src="./images/games/game-2.jpg"
+                                            alt="Death Stranding game">
+                                    </div>
+                                    <div class="game-card__genres">
+                                        <a class="game-card__genre" href="#">
+                                            Race
+                                        </a>
+                                        <a class="game-card__genre" href="#">
+                                            MMO
+                                        </a>
+                                        <a class="game-card__genre" href="#">
+                                            +1
+                                        </a>
+                                    </div>
+
+                                    <div class="game-card__accounts game-card__accounts-large">
+                                        <a class="game-card__accounts-item game-card__accounts-pers" href="#">
+                                            Личный аккаунт
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="game-card__footer">
+                                    <div class="game-card__footer-box">
+                                        <div class="game-card__description">
+                                            <h5 class="game-card__title">
+                                                <a class="game-card__link" href="#">
+                                                    Death Stranding
+                                                </a>
+                                            </h5>
+                                            <p class="game-card__subtitle">
+                                                Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                Take-Two
+                                                заявили о...
+                                            </p>
+                                            <span class="game-card__sum">
+                                                359,599 ₽
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="game-card__action">
+                                        <button class="game-card__action-incard light-accent-btn">
+                                            В корзину
+                                        </button>
+                                        <a class="game-card__action-buy light-btn" href="#">
+                                            Купить
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="game-card fighting">
+                                <div class="game-card__info">
+                                    <div class="game-card__img-box">
+                                        <img class="game-card__img"
+                                            src="./images/slides/slides-games/slider-item-1-pr.jpg"
+                                            alt="Death Stranding game">
+                                    </div>
+                                    <div class="game-card__genres">
+                                        <a class="game-card__genre" href="#">
+                                            Экшен
+                                        </a>
+                                        <a class="game-card__genre" href="#">
+                                            Приключения
+                                        </a>
+                                    </div>
+
+                                    <div class="game-card__accounts game-card__accounts-large">
+                                        <a class="game-card__accounts-item game-card__accounts-pers" href="#">
+                                            Личный аккаунт
+                                        </a>
+                                        <a class="game-card__accounts-item game-card__accounts-family" href="#">
+                                            Семейный аккаунт
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="game-card__footer">
+                                    <div class="game-card__footer-box">
+                                        <div class="game-card__description">
+                                            <h5 class="game-card__title">
+                                                <a class="game-card__link" href="#">
+                                                    Death Stranding
+                                                </a>
+                                            </h5>
+                                            <p class="game-card__subtitle">
+                                                Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                Take-Two
+                                                заявили о...
+                                            </p>
+                                            <span class="game-card__sum">
+                                                359,599 ₽
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="game-card__action">
+                                        <button class="game-card__action-incard light-accent-btn">
+                                            В корзину
+                                        </button>
+                                        <a class="game-card__action-buy light-btn" href="#">
+                                            Купить
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="game-card action">
+                                <div class="game-card__info">
+                                    <div class="game-card__img-box">
+                                        <img class="game-card__img" src="./images/games/game-3.jpg"
+                                            alt="Death Stranding game">
+                                    </div>
+                                    <div class="game-card__genres">
+                                        <a class="game-card__genre" href="#">
+                                            Экшен
+                                        </a>
+                                        <a class="game-card__genre" href="#">
+                                            Приключения
+                                        </a>
+                                    </div>
+
+                                    <div class="game-card__accounts game-card__accounts-large">
+                                        <a class="game-card__accounts-item game-card__accounts-pers" href="#">
+                                            Личный аккаунт
+                                        </a>
+                                        <a class="game-card__accounts-item game-card__accounts-family" href="#">
+                                            Семейный аккаунт
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="game-card__footer">
+                                    <div class="game-card__footer-box">
+                                        <div class="game-card__description">
+                                            <h5 class="game-card__title">
+                                                <a class="game-card__link" href="#">
+                                                    Death Stranding
+                                                </a>
+                                            </h5>
+                                            <p class="game-card__subtitle">
+                                                Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                Take-Two
+                                                заявили о...
+                                            </p>
+                                            <span class="game-card__sum">
+                                                359,599 ₽
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="game-card__action">
+                                        <button class="game-card__action-incard light-accent-btn">
+                                            В корзину
+                                        </button>
+                                        <a class="game-card__action-buy light-btn" href="#">
+                                            Купить
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="game-card fighting">
+                                <div class="game-card__info">
+                                    <div class="game-card__img-box">
+                                        <img class="game-card__img" src="./images/games/game-1.jpg"
+                                            alt="Death Stranding game">
+                                    </div>
+                                    <div class="game-card__genres">
+                                        <a class="game-card__genre" href="#">
+                                            Экшен
+                                        </a>
+                                        <a class="game-card__genre" href="#">
+                                            Приключения
+                                        </a>
+                                    </div>
+
+                                    <div class="game-card__accounts game-card__accounts-large">
+                                        <a class="game-card__accounts-item game-card__accounts-pers" href="#">
+                                            Личный аккаунт
+                                        </a>
+                                        <a class="game-card__accounts-item game-card__accounts-family" href="#">
+                                            Семейный аккаунт
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="game-card__footer">
+                                    <div class="game-card__footer-box">
+                                        <div class="game-card__description">
+                                            <h5 class="game-card__title">
+                                                <a class="game-card__link" href="#">
+                                                    Death Stranding
+                                                </a>
+                                            </h5>
+                                            <p class="game-card__subtitle">
+                                                Множество игровых компаний, в том числе, EA, Ubisoft,
+                                                Take-Two
+                                                заявили о...
+                                            </p>
+                                            <span class="game-card__sum">
+                                                359,599 ₽
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="game-card__action">
+                                        <button class="game-card__action-incard light-accent-btn">
+                                            В корзину
+                                        </button>
+                                        <a class="game-card__action-buy light-btn" href="#">
+                                            Купить
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="popup__close">
+                    <button class="popup__close-item" type="button">
+                        &#10006;
+                    </button>
+                </div>
+            </div>
+            <!-- Авторизация -->
+            <div class="authorization__wrapp popup__wrapp" data-target="authorization-path">
+                <div class="authorization__content">
+                    <span class="authorization__title">Авторизация</span>
+                    <p class="authorization__text">
+                        Вы еще не зарегестрированы? Пройдите <a class="authorization__link" href="#"
+                            data-path="registration-path">регистрацию</a>!
+                    </p>
+                    <form class="authorization__form" action="#">
+                        <div class="authorization__items">
+                            <div class="popup__form-item">
+                                <input class="authorization__field popup__field" type="email" name="authorization-email"
+                                    placeholder="Введите логин или почту" required>
+                            </div>
+                            <div class="popup__form-item">
+                                <input class="authorization__field popup__field" name="authorization-password"
+                                    type="password" placeholder="Введите пароль" required>
+                                <button class="popup__form-password" type="button"
+                                    aria-label="скрыть / показать пароль"></button>
+                            </div>
+                        </div>
+
+                        <button class="light-accent-btn authorization__button" type="submit" disabled>Войти</button>
+                    </form>
+                    <div class="popup__close">
+                        <button class="popup__close-item" type="button">
+                            &#10006;
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Регистрация -->
+            <div class="registration__wrapp popup__wrapp" data-target="registration-path">
+                <div class="registration__content">
+                    <span class="registration__title">Регистрация</span>
+                    <p class="registration__text">
+                        Вы уже зарегестрированы?
+                        Выполните вход <a class="registration__link" href="#" data-path="authorization-path">вход </a>в
+                        аккаунт!
+                    </p>
+                    <form class="registration__form" action="#">
+                        <div class="registration__items">
+                            <div class="popup__form-item popup__form-item--false">
+                                <input class="registration__field popup__field" type="text" name="registration-login"
+                                    placeholder="Логин" required>
+                                <p class="popup__error">Логин уже используется. Придумайте новый</p>
+                            </div>
+                            <div class="popup__form-item">
+                                <input class="registration__field popup__field" type="email" name="registration-email"
+                                    placeholder="Почта" required>
+                            </div>
+                            <div class="popup__form-item popup__form-item--true">
+                                <button class="popup__form-password" type="button"
+                                    aria-label="скрыть / показать пароль"></button>
+                                <input class="registration__field popup__field" name="registration-password"
+                                    type="password" placeholder="Пароль" required>
+                            </div>
+                        </div>
+
+                        <button class="light-accent-btn registration__button" type="submit"
+                            disabled>Зарегестрироваться</button>
+
+                        <p class="registration__agree">Нажимая на кнопку я принимаю условия публичной оферты и
+                            согласен(а) на обработку персональных данных.</p>
+                    </form>
+                    <div class="popup__close">
+                        <button class="popup__close-item" type="button">
+                            &#10006;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 

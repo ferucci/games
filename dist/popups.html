@@ -69,7 +69,7 @@
                     <div class="header__basket basket">
                         <a class="basket__box" href="./basket.html">
                             <span class="basket__num">3</span>
-                            <img src="./images/icons/header/basket.svg" alt="basket">
+                            <img loading="lazy" src="./images/icons/header/basket.svg" alt="basket">
                         </a>
                     </div>
                     <button class="header__btn-menu">
@@ -79,10 +79,12 @@
                     </button>
                     <article class="header__form form-log">
                         <div class="form-log__inner burger-menu" data-nav="burger">
-                            <button class="form-log__register light-accent-btn">
+                            <button class="form-log__register light-accent-btn" data-path="registration-path"
+                                data-animation="fadeInUp" data-speed="200">
                                 Регистрация
                             </button>
-                            <button class="form-log__login">
+                            <button class="form-log__login" data-path="authorization-path" data-animation="fadeInUp"
+                                data-speed="200">
                                 Войти
                             </button>
                         </div>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="./js/main.min.js" defer></script>
-    <title>Games</title>
+    <title>Catalog</title>
 </head>
 
 <body>
@@ -69,7 +69,7 @@
                     <div class="header__basket basket">
                         <a class="basket__box" href="./basket.html">
                             <span class="basket__num">3</span>
-                            <img src="./images/icons/header/basket.svg" alt="basket">
+                            <img loading="lazy" src="./images/icons/header/basket.svg" alt="basket">
                         </a>
                     </div>
                     <button class="header__btn-menu">
@@ -79,10 +79,12 @@
                     </button>
                     <article class="header__form form-log">
                         <div class="form-log__inner burger-menu" data-nav="burger">
-                            <button class="form-log__register light-accent-btn">
+                            <button class="form-log__register light-accent-btn" data-path="registration-path"
+                                data-animation="fadeInUp" data-speed="200">
                                 Регистрация
                             </button>
-                            <button class="form-log__login">
+                            <button class="form-log__login" data-path="authorization-path" data-animation="fadeInUp"
+                                data-speed="200">
                                 Войти
                             </button>
                         </div>
@@ -139,40 +141,41 @@
                         <nav>
                             <ul class="catalog__buttons">
                                 <li>
-                                    <button class="catalog-btn" type="button" data-fil="action">Экшен</button>
+                                    <button class="catalog-btn" type="button" data-fil="Экшен">Экшен</button>
                                 </li>
                                 <li>
-                                    <button class="catalog-btn" type="button" data-fil="indie">Инди</button>
+                                    <button class="catalog-btn" type="button" data-fil="Инди">Инди</button>
                                 </li>
                                 <li>
-                                    <button class="catalog-btn" type="button" data-fil="shooter">Шутер</button>
+                                    <button class="catalog-btn" type="button" data-fil="Шутер">Шутер</button>
                                 </li>
                                 <li>
-                                    <button class="catalog-btn" type="button" data-fil="adventures">Приключения</button>
+                                    <button class="catalog-btn" type="button"
+                                        data-fil="Приключения">Приключения</button>
                                 </li>
                                 <li>
-                                    <button class="catalog-btn" type="button" data-fil="strategy">Стратегия</button>
+                                    <button class="catalog-btn" type="button" data-fil="Стратегия">Стратегия</button>
                                 </li>
                                 <li>
-                                    <button class="catalog-btn" type="button" data-fil="simulator">Симулятор</button>
+                                    <button class="catalog-btn" type="button" data-fil="Симулятор">Симулятор</button>
                                 </li>
                                 <li>
-                                    <button class="catalog-btn" type="button" data-fil="role-playing">Ролевые</button>
+                                    <button class="catalog-btn" type="button" data-fil="Ролевые">Ролевые</button>
                                 </li>
                                 <li>
-                                    <button class="catalog-btn" type="button" data-fil="race">Гонки</button>
+                                    <button class="catalog-btn" type="button" data-fil="Гонки">Гонки</button>
                                 </li>
                                 <li>
-                                    <button class="catalog-btn" type="button" data-fil="mmo">ММО</button>
+                                    <button class="catalog-btn" type="button" data-fil="ММО">ММО</button>
                                 </li>
                                 <li>
-                                    <button class="catalog-btn" type="button" data-fil="fighting">Файтинг</button>
+                                    <button class="catalog-btn" type="button" data-fil="Файтинг">Файтинг</button>
                                 </li>
                                 <li>
-                                    <button class="catalog-btn" type="button" data-fil="casual">Казульные</button>
+                                    <button class="catalog-btn" type="button" data-fil="Казульные">Казульные</button>
                                 </li>
                                 <li>
-                                    <button class="catalog-btn" type="button" data-fil="dlc">DLC</button>
+                                    <button class="catalog-btn" type="button" data-fil="DLC">DLC</button>
                                 </li>
                             </ul>
                         </nav>
@@ -185,12 +188,11 @@
                         </div>
                     </div>
                     <div class="catalog__games">
-                        <div class="catalog__games-wrap games">
-                            <div class="game-card fighting">
+                        <div class="catalog__games-wrap games" id="catalog-games">
+                            <!-- <div class="game-card fighting">
                                 <div class="game-card__info">
                                     <div class="game-card__img-box">
-                                        <img class="game-card__img"
-                                            src="./images/slides/slides-games/slider-item-1-pr.jpg"
+                                        <img class="game-card__img" src="./images/games/catalog/game-1.jpg"
                                             alt="Death Stranding game">
                                     </div>
                                     <div class="game-card__genres">
@@ -614,7 +616,7 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                         <button class="catalog__games-btn accent-btn" href="#">
@@ -631,18 +633,18 @@
             <div class="footer__wrapp">
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item" id="catalog">
-                            <a class="nav__link" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./catalog.html">
                                 Каталог
                             </a>
                         </li>
-                        <li class="nav__item" id="review">
-                            <a class="nav__link" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./reviews.html">
                                 Отзывы
                             </a>
                         </li>
-                        <li class="nav__item" id="ans-ques">
-                            <a class="nav__link" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./faq.html">
                                 Вопрос-ответ
                             </a>
                         </li>
@@ -695,6 +697,85 @@
             </div>
         </div>
     </footer>
+
+    <!-- popups -->
+
+    <div class="game-purchase popup">
+        <div class="container">
+            <!-- Авторизация -->
+            <div class="authorization__wrapp popup__wrapp" data-target="authorization-path">
+                <div class="authorization__content">
+                    <span class="authorization__title">Авторизация</span>
+                    <p class="authorization__text">
+                        Вы еще не зарегестрированы? Пройдите <a class="authorization__link" href="#"
+                            data-path="registration-path">регистрацию</a>!
+                    </p>
+                    <form class="authorization__form" action="#">
+                        <div class="authorization__items">
+                            <div class="popup__form-item">
+                                <input class="authorization__field popup__field" type="email" name="authorization-email"
+                                    placeholder="Введите логин или почту" required>
+                            </div>
+                            <div class="popup__form-item">
+                                <input class="authorization__field popup__field" name="authorization-password"
+                                    type="password" placeholder="Введите пароль" required>
+                                <button class="popup__form-password" type="button"
+                                    aria-label="скрыть / показать пароль"></button>
+                            </div>
+                        </div>
+
+                        <button class="light-accent-btn authorization__button" type="submit" disabled>Войти</button>
+                    </form>
+                    <div class="popup__close">
+                        <button class="popup__close-item" type="button">
+                            &#10006;
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Регистрация -->
+            <div class="registration__wrapp popup__wrapp" data-target="registration-path">
+                <div class="registration__content">
+                    <span class="registration__title">Регистрация</span>
+                    <p class="registration__text">
+                        Вы уже зарегестрированы?
+                        Выполните вход <a class="registration__link" href="#" data-path="authorization-path">вход </a>в
+                        аккаунт!
+                    </p>
+                    <form class="registration__form" action="#">
+                        <div class="registration__items">
+                            <div class="popup__form-item popup__form-item--false">
+                                <input class="registration__field popup__field" type="text" name="registration-login"
+                                    placeholder="Логин" required>
+                                <p class="popup__error">Логин уже используется. Придумайте новый</p>
+                            </div>
+                            <div class="popup__form-item">
+                                <input class="registration__field popup__field" type="email" name="registration-email"
+                                    placeholder="Почта" required>
+                            </div>
+                            <div class="popup__form-item popup__form-item--true">
+                                <button class="popup__form-password" type="button"
+                                    aria-label="скрыть / показать пароль"></button>
+                                <input class="registration__field popup__field" name="registration-password"
+                                    type="password" placeholder="Пароль" required>
+                            </div>
+                        </div>
+
+                        <button class="light-accent-btn registration__button" type="submit"
+                            disabled>Зарегестрироваться</button>
+
+                        <p class="registration__agree">Нажимая на кнопку я принимаю условия публичной оферты и
+                            согласен(а) на обработку персональных данных.</p>
+                    </form>
+                    <div class="popup__close">
+                        <button class="popup__close-item" type="button">
+                            &#10006;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

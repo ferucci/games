@@ -69,7 +69,7 @@
                     <div class="header__basket basket">
                         <a class="basket__box" href="./basket.html">
                             <span class="basket__num">3</span>
-                            <img src="./images/icons/header/basket.svg" alt="basket">
+                            <img loading="lazy" src="./images/icons/header/basket.svg" alt="basket">
                         </a>
                     </div>
                     <button class="header__btn-menu">
@@ -79,10 +79,12 @@
                     </button>
                     <article class="header__form form-log">
                         <div class="form-log__inner burger-menu" data-nav="burger">
-                            <button class="form-log__register light-accent-btn">
+                            <button class="form-log__register light-accent-btn" data-path="registration-path"
+                                data-animation="fadeInUp" data-speed="200">
                                 Регистрация
                             </button>
-                            <button class="form-log__login">
+                            <button class="form-log__login" data-path="authorization-path" data-animation="fadeInUp"
+                                data-speed="200">
                                 Войти
                             </button>
                         </div>
@@ -120,10 +122,12 @@
                                 </div>
 
                                 <div class="reviews-top__buttons">
-                                    <a class="reviews-top__button accent-btn" href="#">
+                                    <a class="reviews-top__button accent-btn" href="#" data-path="comment-path"
+                                        data-animation="fadeInUp" data-speed="200">
                                         Оставть отзыв
                                     </a>
-                                    <a class="reviews-top__button reviews-top__button--catalog accent-btn" href="#">
+                                    <a class="reviews-top__button reviews-top__button--catalog accent-btn"
+                                        href="./catalog.html">
                                         Каталог игр
                                     </a>
                                 </div>
@@ -396,12 +400,12 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="./reviews-top.html">
+                            <a class="nav__link" href="./reviews.html">
                                 Отзывы
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="./quest-ans.html">
+                            <a class="nav__link" href="./faq.html">
                                 Вопрос-ответ
                             </a>
                         </li>
@@ -454,6 +458,128 @@
             </div>
         </div>
     </footer>
+
+    <!-- popups -->
+
+    <div class="game-purchase popup">
+        <div class="container">
+            <!-- Авторизация -->
+            <div class="authorization__wrapp popup__wrapp" data-target="authorization-path">
+                <div class="authorization__content">
+                    <span class="authorization__title">Авторизация</span>
+                    <p class="authorization__text">
+                        Вы еще не зарегестрированы? Пройдите <a class="authorization__link" href="#"
+                            data-path="registration-path">регистрацию</a>!
+                    </p>
+                    <form class="authorization__form" action="#">
+                        <div class="authorization__items">
+                            <div class="popup__form-item">
+                                <input class="authorization__field popup__field" type="email" name="authorization-email"
+                                    placeholder="Введите логин или почту" required>
+                            </div>
+                            <div class="popup__form-item">
+                                <input class="authorization__field popup__field" name="authorization-password"
+                                    type="password" placeholder="Введите пароль" required>
+                                <button class="popup__form-password" type="button"
+                                    aria-label="скрыть / показать пароль"></button>
+                            </div>
+                        </div>
+
+                        <button class="light-accent-btn authorization__button" type="submit" disabled>Войти</button>
+                    </form>
+                    <div class="popup__close">
+                        <button class="popup__close-item" type="button">
+                            &#10006;
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Регистрация -->
+            <div class="registration__wrapp popup__wrapp" data-target="registration-path">
+                <div class="registration__content">
+                    <span class="registration__title">Регистрация</span>
+                    <p class="registration__text">
+                        Вы уже зарегестрированы?
+                        Выполните вход <a class="registration__link" href="#" data-path="authorization-path">вход </a>в
+                        аккаунт!
+                    </p>
+                    <form class="registration__form" action="#">
+                        <div class="registration__items">
+                            <div class="popup__form-item popup__form-item--false">
+                                <input class="registration__field popup__field" type="text" name="registration-login"
+                                    placeholder="Логин" required>
+                                <p class="popup__error">Логин уже используется. Придумайте новый</p>
+                            </div>
+                            <div class="popup__form-item">
+                                <input class="registration__field popup__field" type="email" name="registration-email"
+                                    placeholder="Почта" required>
+                            </div>
+                            <div class="popup__form-item popup__form-item--true">
+                                <button class="popup__form-password" type="button"
+                                    aria-label="скрыть / показать пароль"></button>
+                                <input class="registration__field popup__field" name="registration-password"
+                                    type="password" placeholder="Пароль" required>
+                            </div>
+                        </div>
+
+                        <button class="light-accent-btn registration__button" type="submit"
+                            disabled>Зарегестрироваться</button>
+
+                        <p class="registration__agree">Нажимая на кнопку я принимаю условия публичной оферты и
+                            согласен(а) на обработку персональных данных.</p>
+                    </form>
+                    <div class="popup__close">
+                        <button class="popup__close-item" type="button">
+                            &#10006;
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Оставить отзыв -->
+            <div class="comment__wrapp popup__wrapp" data-target="comment-path">
+                <div class="comment__content">
+                    <span class="comment__title">Оставить комментарий</span>
+                    <form class="registration__form" action="#">
+                        <p class="comment__number">Номер заказа: <span>23</span></p>
+                        <div class="popup__form-item">
+                            <textarea class="comment__message popup__field popup__field--message" name="comment"
+                                placeholder="Комментарий" required></textarea>
+                        </div>
+                        <div class="comment__rating">
+                            <p class="comment__grade">Ваша оценка:</p>
+                            <ul class="comment__stars">
+                                <li class="comment__star"
+                                    style="background-image: url('images/icons/star-rating.svg');"></li>
+                                <li class="comment__star"
+                                    style="background-image: url('images/icons/star-rating.svg');"></li>
+                                <li class="comment__star"
+                                    style="background-image: url('images/icons/star-rating.svg');"></li>
+                                <li class="comment__star"
+                                    style="background-image: url('images/icons/star-rating.svg');"></li>
+                                <li class="comment__star"
+                                    style="background-image: url('images/icons/star-rating-reverse.svg');"></li>
+                            </ul>
+                        </div>
+                        <div class="comment__show">
+                            <label class="comment__check">
+                                <input class="comment__hidden" type="checkbox" name="comment-show">
+                                <span class="comment__visible" aria-hidden="true"></span>
+                                Показать игру
+                            </label>
+                            <p class="comment__subtext">Разрешите нам показать товар из вашего заказа. Это поможет
+                                нам стать лучше!</p>
+                        </div>
+                        <button class="light-accent-btn comment__button" type="submit">Оставить комментарий</button>
+                    </form>
+                    <div class="popup__close">
+                        <button class="popup__close-item" type="button">
+                            &#10006;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

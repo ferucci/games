@@ -69,7 +69,7 @@
                     <div class="header__basket basket">
                         <a class="basket__box" href="./basket.html">
                             <span class="basket__num">3</span>
-                            <img src="./images/icons/header/basket.svg" alt="basket">
+                            <img loading="lazy" src="./images/icons/header/basket.svg" alt="basket">
                         </a>
                     </div>
                     <button class="header__btn-menu">
@@ -79,10 +79,12 @@
                     </button>
                     <article class="header__form form-log">
                         <div class="form-log__inner burger-menu" data-nav="burger">
-                            <button class="form-log__register light-accent-btn">
+                            <button class="form-log__register light-accent-btn" data-path="registration-path"
+                                data-animation="fadeInUp" data-speed="200">
                                 Регистрация
                             </button>
-                            <button class="form-log__login">
+                            <button class="form-log__login" data-path="authorization-path" data-animation="fadeInUp"
+                                data-speed="200">
                                 Войти
                             </button>
                         </div>
@@ -111,7 +113,8 @@
                                 Ты можешь поискать интересующие тебя вопросы или задать новый.
                             </p>
 
-                            <a class="faq__button accent-btn" href="#">
+                            <a class="faq__button accent-btn" href="#" data-path="ask-path" data-animation="fadeInUp"
+                                data-speed="200">
                                 Задать вопрос
                             </a>
                             <span class="faq__text">
@@ -288,18 +291,18 @@
             <div class="footer__wrapp">
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item" id="catalog">
-                            <a class="nav__link" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./catalog.html">
                                 Каталог
                             </a>
                         </li>
-                        <li class="nav__item" id="review">
-                            <a class="nav__link" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./reviews.html">
                                 Отзывы
                             </a>
                         </li>
-                        <li class="nav__item" id="ans-ques">
-                            <a class="nav__link" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./faq.html">
                                 Вопрос-ответ
                             </a>
                         </li>
@@ -352,6 +355,115 @@
             </div>
         </div>
     </footer>
+
+    <div class="ask popup">
+        <div class="container">
+            <!-- Задать вопрос -->
+            <div class="ask__wrapp popup__wrapp" data-target="ask-path">
+                <span class="ask__title">Задать вопрос</span>
+                <form class="ask__form" action="#">
+                    <div id="select-3">
+
+                    </div>
+                    <span class="ask__symbol">0 из 180 символов</span>
+
+                    <div class="ask__items">
+                        <div class="popup__form-item">
+                            <textarea class="ask__short popup__field popup__field--message" name="short"
+                                placeholder="Краткая суть вопроса" required></textarea>
+                        </div>
+                        <div class="popup__form-item">
+                            <textarea class="ask__long popup__field popup__field--message" name="short"
+                                placeholder="Описание вопроса" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="ask__buttons">
+                        <button class="light-accent-btn ask__button" type="submit">Задать вопрос</button>
+                        <button class="ask__photo" type="button">Прикрепить фото</button>
+                    </div>
+                </form>
+                <div class="popup__close">
+                    <button class="popup__close-item" type="button">
+                        &#10006;
+                    </button>
+                </div>
+            </div>
+            <!-- Авторизация -->
+            <div class="authorization__wrapp popup__wrapp" data-target="authorization-path">
+                <div class="authorization__content">
+                    <span class="authorization__title">Авторизация</span>
+                    <p class="authorization__text">
+                        Вы еще не зарегестрированы? Пройдите <a class="authorization__link" href="#"
+                            data-path="registration-path">регистрацию</a>!
+                    </p>
+                    <form class="authorization__form" action="#">
+                        <div class="authorization__items">
+                            <div class="popup__form-item">
+                                <input class="authorization__field popup__field" type="email" name="authorization-email"
+                                    placeholder="Введите логин или почту" required>
+                            </div>
+                            <div class="popup__form-item">
+                                <input class="authorization__field popup__field" name="authorization-password"
+                                    type="password" placeholder="Введите пароль" required>
+                                <button class="popup__form-password" type="button"
+                                    aria-label="скрыть / показать пароль"></button>
+                            </div>
+                        </div>
+
+                        <button class="light-accent-btn authorization__button" type="submit" disabled>Войти</button>
+                    </form>
+                    <div class="popup__close">
+                        <button class="popup__close-item" type="button">
+                            &#10006;
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Регистрация -->
+            <div class="registration__wrapp popup__wrapp" data-target="registration-path">
+                <div class="registration__content">
+                    <span class="registration__title">Регистрация</span>
+                    <p class="registration__text">
+                        Вы уже зарегестрированы?
+                        Выполните вход <a class="registration__link" href="#" data-path="authorization-path">вход </a>в
+                        аккаунт!
+                    </p>
+                    <form class="registration__form" action="#">
+                        <div class="registration__items">
+                            <div class="popup__form-item popup__form-item--false">
+                                <input class="registration__field popup__field" type="text" name="registration-login"
+                                    placeholder="Логин" required>
+                                <p class="popup__error">Логин уже используется. Придумайте новый</p>
+                            </div>
+                            <div class="popup__form-item">
+                                <input class="registration__field popup__field" type="email" name="registration-email"
+                                    placeholder="Почта" required>
+                            </div>
+                            <div class="popup__form-item popup__form-item--true">
+                                <button class="popup__form-password" type="button"
+                                    aria-label="скрыть / показать пароль"></button>
+                                <input class="registration__field popup__field" name="registration-password"
+                                    type="password" placeholder="Пароль" required>
+                            </div>
+                        </div>
+
+                        <button class="light-accent-btn registration__button" type="submit"
+                            disabled>Зарегестрироваться</button>
+
+                        <p class="registration__agree">Нажимая на кнопку я принимаю условия публичной оферты и
+                            согласен(а) на обработку персональных данных.</p>
+                    </form>
+                    <div class="popup__close">
+                        <button class="popup__close-item" type="button">
+                            &#10006;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

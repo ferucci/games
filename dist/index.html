@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <script defer src="./js/main.min.js"></script>
     <title>Game</title>
 </head>
 
@@ -41,7 +40,6 @@
                         </svg>
                     </a>
                     <div class="header__search search">
-                        <!-- <label class="search__label" for="search"></label> -->
                         <input class="search__input" type="search" name="search" id="input-search"
                             placeholder="Поиск...">
                     </div>
@@ -68,7 +66,7 @@
                 <div class="header__log">
                     <div class="header__basket basket">
                         <a class="basket__box" href="./basket.html">
-                            <span class="basket__num">3</span>
+                            <span class="basket__num"></span>
                             <img loading="lazy" src="./images/icons/header/basket.svg" alt="basket">
                         </a>
                     </div>
@@ -80,7 +78,7 @@
                     <article class="header__form form-log">
                         <div class="form-log__inner burger-menu" data-nav="burger">
                             <button class="form-log__register light-accent-btn" data-path="registration-path"
-                                data-animation="fadeInUp" data-speed="200">
+                                data-animation="fadeInUp" data-speed="400">
                                 Регистрация
                             </button>
                             <button class="form-log__login" data-path="authorization-path" data-animation="fadeInUp"
@@ -199,6 +197,7 @@
           </div>
         </div> -->
             </div>
+
         </section>
         <section class="content main__page">
             <div class="container">
@@ -256,7 +255,7 @@
                             <div class="slider__items" id="slider-games">
 
                                 <div class="slider__item">
-                                    <div class="game-card-large game-card">
+                                    <div class="game-card-large game-card" data-id="1">
                                         <div class="game-card__info">
                                             <div class="game-card__img-box">
                                                 <img loading="lazy" class="game-card__img"
@@ -287,7 +286,7 @@
                                                     <h5 class="game-card__title">
                                                         <a class="game-card__link" href="#" data-path="game-path"
                                                             data-animation="fadeInUp" data-speed="200">
-                                                            Death Stranding
+                                                            Death Stranding Beta
                                                         </a>
                                                     </h5>
                                                     <p class="game-card__subtitle">
@@ -311,7 +310,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="game-card">
+                                    <div class="game-card" data-id="2">
                                         <div class="game-card__info">
                                             <div class="game-card__img-box">
                                                 <img loading="lazy" class="game-card__img"
@@ -339,7 +338,7 @@
                                                     <h5 class="game-card__title">
                                                         <a class="game-card__link" href="#" data-path="game-path"
                                                             data-animation="fadeInUp" data-speed="200">
-                                                            Death Stranding
+                                                            Death Stranding race
                                                         </a>
                                                     </h5>
                                                     <p class="game-card__subtitle">
@@ -363,7 +362,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="game-card">
+                                    <div class="game-card" data-id="3">
                                         <div class="game-card__info">
                                             <div class="game-card__img-box">
                                                 <img loading="lazy" class="game-card__img"
@@ -391,7 +390,7 @@
                                                     <h5 class="game-card__title">
                                                         <a class="game-card__link" href="#" data-path="game-path"
                                                             data-animation="fadeInUp" data-speed="200">
-                                                            Death Stranding
+                                                            Death Stranding shoot
                                                         </a>
                                                     </h5>
                                                     <p class="game-card__subtitle">
@@ -418,7 +417,7 @@
                                 </div>
 
                                 <div class="slider__item">
-                                    <div class="game-card-large game-card">
+                                    <div class="game-card-large game-card" data-id="4">
                                         <div class="game-card__info">
                                             <div class="game-card__img-box">
                                                 <img loading="lazy" class="game-card__img"
@@ -449,7 +448,7 @@
                                                     <h5 class="game-card__title">
                                                         <a class="game-card__link" href="#" data-path="game-path"
                                                             data-animation="fadeInUp" data-speed="200">
-                                                            Death Stranding
+                                                            Death Stranding mega
                                                         </a>
                                                     </h5>
                                                     <p class="game-card__subtitle">
@@ -473,7 +472,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="game-card">
+                                    <div class="game-card" data-id="5">
                                         <div class="game-card__info">
                                             <div class="game-card__img-box">
                                                 <img loading="lazy" class="game-card__img"
@@ -501,7 +500,7 @@
                                                     <h5 class="game-card__title">
                                                         <a class="game-card__link" href="#" data-path="game-path"
                                                             data-animation="fadeInUp" data-speed="200">
-                                                            Death Stranding
+                                                            Death Stranding boolean
                                                         </a>
                                                     </h5>
                                                     <p class="game-card__subtitle">
@@ -525,7 +524,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="game-card">
+                                    <div class="game-card" data-id="6">
                                         <div class="game-card__info">
                                             <div class="game-card__img-box">
                                                 <img loading="lazy" class="game-card__img"
@@ -553,7 +552,7 @@
                                                     <h5 class="game-card__title">
                                                         <a class="game-card__link" href="#" data-path="game-path"
                                                             data-animation="fadeInUp" data-speed="200">
-                                                            Death Stranding
+                                                            Death Stranding train
                                                         </a>
                                                     </h5>
                                                     <p class="game-card__subtitle">
@@ -580,7 +579,7 @@
                                 </div>
 
                                 <div class="slider__item">
-                                    <div class="game-card-large game-card">
+                                    <div class="game-card-large game-card" data-id="7">
                                         <div class="game-card__info">
                                             <div class="game-card__img-box">
                                                 <img loading="lazy" class="game-card__img"
@@ -611,7 +610,7 @@
                                                     <h5 class="game-card__title">
                                                         <a class="game-card__link" href="#" data-path="game-path"
                                                             data-animation="fadeInUp" data-speed="200">
-                                                            Death Stranding
+                                                            Death Stranding grape
                                                         </a>
                                                     </h5>
                                                     <p class="game-card__subtitle">
@@ -635,7 +634,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="game-card">
+                                    <div class="game-card" data-id="8">
                                         <div class="game-card__info">
                                             <div class="game-card__img-box">
                                                 <img loading="lazy" class="game-card__img"
@@ -663,7 +662,7 @@
                                                     <h5 class="game-card__title">
                                                         <a class="game-card__link" href="#" data-path="game-path"
                                                             data-animation="fadeInUp" data-speed="200">
-                                                            Death Stranding
+                                                            Death Stranding prefix
                                                         </a>
                                                     </h5>
                                                     <p class="game-card__subtitle">
@@ -687,7 +686,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="game-card">
+                                    <div class="game-card" data-id="9">
                                         <div class="game-card__info">
                                             <div class="game-card__img-box">
                                                 <img loading="lazy" class="game-card__img"
@@ -715,7 +714,7 @@
                                                     <h5 class="game-card__title">
                                                         <a class="game-card__link" href="#" data-path="game-path"
                                                             data-animation="fadeInUp" data-speed="200">
-                                                            Death Stranding
+                                                            Death Stranding grande
                                                         </a>
                                                     </h5>
                                                     <p class="game-card__subtitle">
@@ -827,11 +826,11 @@
             <!-- Заказ игры с подобными товарами -->
             <div class="game-purchase__wrapp popup__wrapp" data-target="game-path">
                 <div class="selected-game">
-                    <div class="game-card">
+                    <div class="game-card" data-id="10">
                         <div class="game-card__info">
                             <div class="game-card__img-box">
                                 <picture>
-                                    <!-- <source media="(max-width:1200px)" srcset="./assets/images//games/game-4-w.jpg"> -->
+                                    <!-- <source media="(max-width:1200px)" srcset="./images//games/game-4-w.jpg"> -->
                                     <source media="(orientation: landscape)" srcset="./images//games/game-4-w.jpg">
                                     <img loading="lazy" class="game-card__img" src="./images/games/game-4.jpg"
                                         alt="game-selected">
@@ -895,7 +894,7 @@
                             Также может понравится
                         </h4>
                         <div class="offers-games__items" id="slider-popup">
-                            <div class="game-card race">
+                            <div class="game-card race" data-id="11">
                                 <div class="game-card__info">
                                     <div class="game-card__img-box">
                                         <img class="game-card__img" src="./images/games/game-2.jpg"
@@ -948,7 +947,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="game-card fighting">
+                            <div class="game-card fighting" data-id="12">
                                 <div class="game-card__info">
                                     <div class="game-card__img-box">
                                         <img class="game-card__img"
@@ -1002,7 +1001,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="game-card action">
+                            <div class="game-card action" data-id="13">
                                 <div class="game-card__info">
                                     <div class="game-card__img-box">
                                         <img class="game-card__img" src="./images/games/game-3.jpg"
@@ -1055,7 +1054,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="game-card fighting">
+                            <div class="game-card fighting" data-id="14">
                                 <div class="game-card__info">
                                     <div class="game-card__img-box">
                                         <img class="game-card__img" src="./images/games/game-1.jpg"
@@ -1189,9 +1188,63 @@
                     </div>
                 </div>
             </div>
+            <!-- Временный попап с товарами -->
+            <div class="ordering ordering__wrapp popup__wrapp" data-target="temporary-basket-path">
+
+                <div class="ordering__box">
+                    <h2 class="ordering__title top__title">Оформление заказа</h2>
+                </div>
+                <div class="ordering__block">
+                    <div class="ordering__info">
+                        <div class="ordering__amount">
+                            Всего товаров: <span>4</span>
+                        </div>
+                        <div class="ordering__games">
+
+                        </div>
+                    </div>
+
+                    <form class="form-basket">
+                        <div class="form-basket__wrapp">
+                            <div class="form-basket__text">
+                                <p class="form-basket__total-sum">
+                                    Итого: <span>619,18 ₽</span>
+                                </p>
+                                <p class="form-basket__discount">
+                                    Скидка: <span>122 ₽</span>
+                                </p>
+                            </div>
+                            <div class="form-basket__inner">
+                                <h4 class="form-basket__inner-title">
+                                    Форма оплаты:
+                                </h4>
+                                <div class="form-basket__payment-choice">
+                                    <label class="form-basket__label">
+                                        <input class="form-basket__input" type="radio" name="payment-choice">
+                                        Юкасса
+                                    </label>
+                                    <label class="form-basket__label">
+                                        <input class="form-basket__input" type="radio" name="payment-choice">
+                                        Альфа Банк
+                                    </label>
+                                </div>
+                                <div class="form-basket__promocode">
+                                    <input class="form-basket__promocode-input" type="text"
+                                        placeholder="Введите промокод">
+                                    <button class="form-basket__promocode-btn">Проверить</button>
+                                </div>
+                                <button class="accent-btn form-basket__submit" type="submit">
+                                    Создать заявку
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </div>
     </div>
-
+    <script src="./js/main.min.js"></script>
 </body>
 
 </html>

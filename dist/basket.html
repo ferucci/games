@@ -6,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="./js/main.min.js" defer></script>
-    <title>Games</title>
+    <title>Basket</title>
 </head>
 
-<body>
+<body id="basket-page">
 
     <header class="header">
         <div class="container">
@@ -68,7 +67,7 @@
                 <div class="header__log">
                     <div class="header__basket basket">
                         <a class="basket__box" href="./basket.html">
-                            <span class="basket__num">3</span>
+                            <span class="basket__num"></span>
                             <img loading="lazy" src="./images/icons/header/basket.svg" alt="basket">
                         </a>
                     </div>
@@ -208,7 +207,7 @@
                             <div class="basket-content content__box">
                                 <div class="basket-content__inner">
                                     <div class="basket-content__games">
-                                        <div class="basket-content__game">
+                                        <!-- <div class="basket-content__game">
                                             <div class="basket-content__game-info">
                                                 <img class="basket-content__game-image"
                                                     src="./images/games/small/game-1.png" alt="game image prev">
@@ -222,9 +221,8 @@
                                                 </div>
                                             </div>
                                             <div class="basket-content__game-select">
-                                                <span class="basket-content__game-del">
-                                                    &#10006;
-                                                </span>
+                                                <button class="basket-content__game-del" aria-label="Удалить товар">
+                                                    <img src="./images/icons/btn-delete.svg" alt=""></button>
                                                 <div class="basket-content__select-app">
                                                     <div class="basket-content__select-wrapp">
 
@@ -235,75 +233,19 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="basket-content__game">
-                                            <div class="basket-content__game-info">
-                                                <img class="basket-content__game-image"
-                                                    src="./images/games/small/game-2.png" alt="game image prev">
-                                                <div class="basket-content__game-text">
-                                                    <span class="basket-content__game-name">
-                                                        Death Stranding
-                                                    </span>
-                                                    <span class="basket-content__game-sum">
-                                                        359,599 ₽
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="basket-content__game-select">
-                                                <span class="basket-content__game-del">
-                                                    &#10006;
-                                                </span>
-                                                <div class="basket-content__select-app">
-                                                    <div class="basket-content__select-wrapp">
-
-                                                        <div id="select-2">
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="basket-content__game">
-                                            <div class="basket-content__game-info">
-                                                <img class="basket-content__game-image"
-                                                    src="./images/games/small/game-3.png" alt="game image prev">
-                                                <div class="basket-content__game-text">
-                                                    <span class="basket-content__game-name">
-                                                        Death Stranding
-                                                    </span>
-                                                    <span class="basket-content__game-sum">
-                                                        359,599 ₽
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="basket-content__game-select">
-                                                <span class="basket-content__game-del">
-                                                    &#10006;
-                                                </span>
-                                                <div class="basket-content__select-app">
-                                                    <div class="basket-content__select-wrapp">
-
-                                                        <div id="select-3">
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <form class="basket-content__form form-basket" id="form-basket">
                                         <div class="form-basket__wrapp">
                                             <div class="form-basket__text">
                                                 <p class="form-basket__total-sum">
-                                                    Итого: <span>619,18 ₽</span>
+                                                    Итого: <span> ₽</span>
                                                 </p>
                                                 <p class="form-basket__total-items">
-                                                    Товаров: <span>4</span>
+                                                    Товаров: <span></span>
                                                 </p>
                                                 <p class="form-basket__discount">
-                                                    Скидка: <span>122 ₽</span>
+                                                    Скидка: <span>₽</span>
                                                 </p>
                                             </div>
                                             <div class="form-basket__inner">
@@ -327,9 +269,9 @@
                                                         placeholder="Введите промокод">
                                                     <button class="form-basket__promocode-btn">Проверить</button>
                                                 </div>
-                                                <button class="accent-btn form-basket__submit" type="submit">
+                                                <a class="accent-btn form-basket__submit" href="./ordering.html">
                                                     Создать заявку
-                                                </button>
+                                                </a>
                                             </div>
                                         </div>
                                     </form>
@@ -964,6 +906,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./js/main.min.js"></script>
 </body>
 
 </html>

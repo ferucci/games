@@ -1139,6 +1139,12 @@
                         </div>
 
                         <button class="light-accent-btn authorization__button" type="submit" disabled>Войти</button>
+                        <label class="authorization__check">
+                            <input class="authorization__hidden" type="checkbox" name="authorization-show">
+                            <span class="authorization__visible" aria-hidden="true"></span>
+                            <p class="authorization__agree">Нажимая на кнопку я принимаю условия публичной оферты и
+                                согласен(а) на обработку персональных данных.</p>
+                        </label>
                     </form>
                     <div class="popup__close">
                         <button class="popup__close-item" type="button">
@@ -1177,9 +1183,12 @@
 
                         <button class="light-accent-btn registration__button" type="submit"
                             disabled>Зарегестрироваться</button>
-
-                        <p class="registration__agree">Нажимая на кнопку я принимаю условия публичной оферты и
-                            согласен(а) на обработку персональных данных.</p>
+                        <label class="registration__check">
+                            <input class="registration__hidden" type="checkbox" name="registration-show">
+                            <span class="registration__visible" aria-hidden="true"></span>
+                            <p class="registration__agree">Нажимая на кнопку я принимаю условия публичной оферты и
+                                согласен(а) на обработку персональных данных.</p>
+                        </label>
                     </form>
                     <div class="popup__close">
                         <button class="popup__close-item" type="button">
